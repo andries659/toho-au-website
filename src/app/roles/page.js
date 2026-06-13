@@ -4,6 +4,7 @@ import { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { FaLightbulb, FaInfoCircle } from "react-icons/fa";
+import HiddenComputer from "../components/HiddenComputer";
 
 export default function Roles() {
   const roles = [
@@ -120,15 +121,6 @@ export default function Roles() {
       imgs: []
     },
     {
-      name: "Toxifier",
-      description: "Toxify players to kill them, the kill does have a delay!",
-      icon: <img src="/icons/Impostor/Toxifier.png" alt="Toxifier" width="42" height="42" />,
-      badges: ["Impostor", "v2.1-r"],
-      video: "",
-      extra: "",
-      imgs: []
-    },
-    {
       name: "Poltergeist",
       description: "Curse players to stop them from winning.",
       icon: <img src="/icons/Impostor/Poltergeist.png" alt="Poltergeist" width="42" height="42" />,
@@ -193,7 +185,7 @@ export default function Roles() {
       imgs: []
     },
     {
-      name: "Survive",
+      name: "Survivor",
       description: "Survive till the end.",
       icon: <img src="/icons/Neutral/Survivor.png" alt="Survivor" width="42" height="42" />,
       badges: ["Neutral", "v2.1-r"],
@@ -205,7 +197,7 @@ export default function Roles() {
       name: "Tavern Keeper",
       description: "Role Block players to stop them from using abilities.",
       icon: <img src="/icons/Coven/TavernKeeper.png" alt="Tavern Keeper" width="42" height="42" />,
-      badges: ["Coven", "v2.0.0-r"],
+      badges: ["Coven", "v2.0-r"],
       video: "",
       extra: "This role cannot win (so far). It can stop Impostors, Crewmates, or Neutrals from using their abilities for a set period of time.",
       tips: "Try to stop the Impostors from winning. Take a wild guess, and remove the abilities from your target for a set period of time.",
@@ -279,6 +271,7 @@ export default function Roles() {
     Coven:                { color: "#d8b4fe", background: "rgba(168,85,247,0.15)", border: "rgba(168,85,247,0.3)" },
     "Universal Modifier": { color: "#86efac", background: "rgba(34,197,94,0.15)", border: "rgba(34,197,94,0.3)" },
     "Crewmate Modifier":  { color: "#7dd3fc", background: "rgba(14,165,233,0.15)", border: "rgba(14,165,233,0.3)" },
+	"Coven Modifier":     { color: "#e9d5ff", background: "rgba(196,181,253,0.15)", border: "rgba(196,181,253,0.3)" },
   };
 
   const versionStyles = {
@@ -705,6 +698,7 @@ export default function Roles() {
           <div className="tor-page-title">
             <div className="tor-page-eyebrow">TOR-W : L</div>
             <h1 className="tor-page-h1">Roles & Modifiers</h1>
+			<HiddenComputer id="roles" />
           </div>
 
           {/* Roles */}

@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import { FaCogs, FaUsers, FaSkullCrossbones, FaMagic, FaClipboardList, FaUsersCog, FaSlidersH, FaCog, FaDownload } from "react-icons/fa";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { fa1, fa2, fa3, fa4, fa5, faDesktop, faMobilePhone } from "@fortawesome/free-solid-svg-icons";
+import HiddenComputer from "../components/HiddenComputer";
 
 // ── Tab metadata ──────────────────────────────────────────────
 const tabsMeta = [
@@ -723,6 +724,7 @@ export default function ExportConfigPage() {
           <div className="tor-page-title">
             <div className="tor-page-eyebrow">TOR-W : L</div>
             <h1 className="tor-page-h1">Config Builder</h1>
+			<HiddenComputer id="options" />
           </div>
 
           {/* Tab bar */}

@@ -6,6 +6,9 @@ import { FaPalette, FaVoteYea, FaPuzzlePiece, FaCog, FaGamepad, FaCheckCircle, F
 import { useEffect, useState, useRef } from "react";
 import Footer from "./components/Footer";
 import ChangelogSection from "./components/ChangelogSection";
+import ProgressBar from "./components/ProgressBar";
+import OpenTerminalButton from "./components/OpenTerminalButton";
+import "./terminal/styles.css";
 
 function DownloadButton() {
   const [downloadUrl, setDownloadUrl] = useState(null);
@@ -364,6 +367,9 @@ export default function Home() {
               </div>
             </section>
           </FadeSection>
+		  
+		  <ProgressBar />
+		  <OpenTerminalButton />
 
           {/* Features */}
           <FadeSection delay={80}>

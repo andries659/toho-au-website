@@ -3,6 +3,7 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { useEffect, useState, useRef } from "react";
+import HiddenComputer from "../components/HiddenComputer";
 
 function RainbowText({ text }) {
   const colors = [
@@ -131,6 +132,18 @@ export default function FeaturesPage() {
       description: "Added custom ability counters for each role, showing uses remaining depending on the action.",
       image: "/features/feature12.png",
       tag: "Gameplay",
+    },
+	{
+      title: "Custom Gamemodes",
+      description: "Added some unique and fun gamemodes to the game for some chaos and twists.",
+      image: "/features/feature13.png",
+      tag: "Gameplay",
+    },
+	{
+      title: "Help Buttons",
+      description: "Added custom buttons next to modifiers to see a description of what the modifier does.",
+      image: "/features/feature14.png",
+      tag: "UI",
     },
   ];
 
@@ -284,6 +297,7 @@ export default function FeaturesPage() {
           <div className="tor-page-title">
             <div className="tor-page-eyebrow">TOR-W : L</div>
             <h1 className="tor-page-h1">Features</h1>
+			<HiddenComputer id="features" />
           </div>
 
           {features.map((f, i) => {
