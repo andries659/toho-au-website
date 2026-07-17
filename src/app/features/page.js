@@ -1,4 +1,4 @@
-/*"use client";
+"use client";
 
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -330,4 +330,4 @@ export default function FeaturesPage() {
       </div>
     </>
   );
-}*/
+}
