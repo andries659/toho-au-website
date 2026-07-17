@@ -713,6 +713,9 @@ export default function TemplatePage() {
           <div className="tor-page-title">
             <div className="tor-page-eyebrow">TOHO</div>
             <h1 className="tor-page-h1">Live Template Editor</h1>
+			<p className="tor-sub">
+                Credit to the MAUL Website for this idea.
+            </p>
           </div>
 
           {/* Tab bar */}
@@ -851,7 +854,7 @@ export default function TemplatePage() {
                 <span className="tor-section-line" />
               </div>
               <div className="tor-toolbar-row" style={{ marginBottom: 20, gap: 6, flexWrap: "wrap" }}>
-                {["{{PlayerName}}", "{{ModVersion}}"].map(v => (
+                {["{{PlayerName}}", "{{ModVersion}}", "{{HostName}}", "{{RoomCode}}", "{{AmongUsVersion}}", "{{InternalVersion}}", "{{Players}}", "{{AlivePlayers}}", "{{DeadPlayers}}", "{{PlayerCount}}", "{{AlivePlayerCount}}", "{{DeadPlayerCount}}", "{{Map}}", "{{KillCooldown}}", "{{DiscussionTime}}", "{{VotingTime}}", "{{EmergencyCooldown}}", "{{MeetingCount}}", "{{NumEmergencyMeetings}}", "{{PlayerSpeedMod}}", "{{CrewLightMod}}", "{{ImpostorLightMod}}", "{{NumCommonTasks}}", "{{NumLongTasks}}", "{{NumShortTasks}}", "{{GameDuration}}", "{{Date}}", "{{Time}}", "{{Preset}}"].map(v => (
                   <span key={v} className="tor-var-tag" onClick={() => insertLiteral(v)}>{v}</span>
                 ))}
               </div>
