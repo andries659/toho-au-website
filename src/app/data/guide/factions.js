@@ -36,7 +36,7 @@ export const factions = [
     name: "Modifier",
     color: "#66bb6a",
     glow: "rgba(102,187,106,0.25)",
-    icon: "\u2699",
+    icon: "/icons/Modifiers.png",
     description: "Add-on effects that layer onto any role.",
   },
 ];

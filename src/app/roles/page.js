@@ -4,7 +4,7 @@ import { useMemo, useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { FaInfoCircle, FaSearch, FaTimes } from "react-icons/fa";
-import { parseMarkup } from "./markup";
+import { parseMarkup } from "../lib/textMarkup";
 import rolesData from "../data/roles.json";
 
 const PAGE_SIZE = 48;
@@ -30,14 +30,25 @@ function CategoryBadge({ category }) {
 
 function RoleCard({ role }) {
   const [open, setOpen] = useState(false);
+  const [iconFailed, setIconFailed] = useState(false);
   const s = CATEGORY_STYLES[role.category] || CATEGORY_STYLES.Modifier;
 
   return (
     <div className="tor-role-card">
       <div className="tor-role-header">
-        <div className="tor-role-icon" style={{ color: s.color, background: s.background, borderColor: s.border }}>
-          {role.name.charAt(0)}
-        </div>
+        {!iconFailed ? (
+          <img
+            src={`/icons/RoleIcons/${role.id}.png`}
+            alt=""
+            className="tor-role-icon-img"
+            style={{ borderColor: s.border, background: s.background }}
+            onError={() => setIconFailed(true)}
+          />
+        ) : (
+          <div className="tor-role-icon" style={{ color: s.color, background: s.background, borderColor: s.border }}>
+            {role.name.charAt(0)}
+          </div>
+        )}
         <div className="tor-role-meta">
           <h2 className="tor-role-name">{role.name}</h2>
           <div className="tor-badge-row">
@@ -251,6 +262,15 @@ export default function Roles() {
           font-family: 'Syne', sans-serif;
           font-weight: 800;
           font-size: 17px;
+        }
+        .tor-role-icon-img {
+          width: 44px;
+          height: 44px;
+          border-radius: 12px;
+          border: 1px solid;
+          object-fit: contain;
+          padding: 6px;
+          flex-shrink: 0;
         }
         .tor-role-meta { flex: 1; min-width: 0; }
         .tor-role-name { font-size: 16px; font-weight: 800; color: #f0eeff; letter-spacing: -0.01em; margin-bottom: 6px; }

@@ -372,7 +372,7 @@ export default function NewsModal({ onClose }) {
               <div className="tor-article-body">{selected.content}</div>
               {selected.author && (
                 <div className="tor-article-author">
-                  - <span className="tor-article-author-name">{selected.author}</span>
+                  Written by <span className="tor-article-author-name">{selected.author}</span>
                 </div>
               )}
             </>

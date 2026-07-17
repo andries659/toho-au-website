@@ -262,7 +262,7 @@ export default function GuidePage() {
         <main className="tor-guide-main">
           <FadeSection delay={0}>
             <section className="tor-guide-hero">
-              <div className="tor-guide-eyebrow">TOR-W : L</div>
+              <div className="tor-guide-eyebrow">TOHO</div>
               <h1 className="tor-guide-title">
                 Role <span className="tor-guide-gradient-text">Guide</span>
               </h1>

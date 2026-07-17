@@ -351,7 +351,7 @@ export default function Home() {
             <section className="tor-hero">
               <div className="tor-eyebrow">Among Us Mod</div>
               <h1 className="tor-h1">
-                The <span className="tor-gradient-text">Optimized</span><br />
+                The <span className="tor-gradient-text">Optmized</span><br />
                 Experience
               </h1>
               <p className="tor-sub">
@@ -375,7 +375,7 @@ export default function Home() {
               <div className="tor-feature-grid">
                 {[
                   { icon: <FaPalette />, title: "Colored UI",    desc: "Vibrant colors and visual enhancements throughout" },
-                  { icon: <FaPuzzlePiece />, title: "Custom Roles", desc: "400+ Feature-rich roles with unique abilities" },
+                  { icon: <FaPuzzlePiece />, title: "Custom Roles", desc: "Feature-rich roles with unique abilities" },
                   { icon: <FaCog />,     title: "Game Options",   desc: "New settings and configuration tools" },
                   { icon: <FaGamepad />, title: "Gamemodes",      desc: "Entirely new ways to play" },
                 ].map(({ icon, title, desc }) => (
@@ -399,19 +399,19 @@ export default function Home() {
               <div className="tor-compat-list">
                 <div className="tor-compat-item">
                   <div className="tor-dot tor-dot-green" />
-                  <span className="tor-compat-text">Supports version <strong>2026.6.08 (17.4.0)</strong> on PC</span>
+                  <span className="tor-compat-text">Supports version <strong>2026.6.8 (17.4.0)</strong> on PC</span>
                 </div>
                 <div className="tor-compat-item">
                   <div className="tor-dot tor-dot-green" />
-                  <span className="tor-compat-text"><strong>Starlight</strong> support coming soon</span>
+                  <span className="tor-compat-text">Supports the latest verion of <strong>Starlight</strong></span>
                 </div>
                 <div className="tor-compat-item">
                   <div className="tor-dot tor-dot-green" />
-                  <span className="tor-compat-text">Host-only — <strong>only host requires mod</strong></span>
+                  <span className="tor-compat-text">Host-only — <strong>only host requires the mod</strong> — not all players requires the mod</span>
                 </div>
                 <div className="tor-compat-item">
                   <div className="tor-dot tor-dot-red" />
-                  <span className="tor-compat-text">Only works on <strong>modded regions (e.g. Niko-EU, MEU)</strong></span>
+                  <span className="tor-compat-text">Only works on <strong>Modded Regions (e.g. Niko-EU, Modded EU)</strong></span>
                 </div>
               </div>
             </section>

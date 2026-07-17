@@ -37,8 +37,8 @@ function SettingRow({ setting }) {
   return (
     <div className="tor-rc-setting-row">
       <div className="tor-rc-setting-info">
-        <span className="tor-rc-setting-label">{setting.label}</span>
-        <span className="tor-rc-setting-key">{setting.key}</span>
+        <span className="tor-rc-setting-label">{parseMarkup(setting.label)}</span>
+        {setting.key && <span className="tor-rc-setting-key">{setting.key}</span>}
       </div>
       <div className="tor-rc-setting-value">
         {setting.type === "toggle" && (
@@ -48,13 +48,13 @@ function SettingRow({ setting }) {
         )}
         {setting.type === "number" && (
           <span className="tor-rc-setting-number">
-            Default: <strong>{setting.default}</strong>
+            Default: <strong>{setting.default}{setting.suffix ?? ""}</strong>
             {setting.min !== undefined && (
-              <span className="tor-rc-setting-range"> ({setting.min}–{setting.max})</span>
+              <span className="tor-rc-setting-range"> ({setting.min}–{setting.max}{setting.suffix ?? ""})</span>
             )}
           </span>
         )}
-        {setting.type === "select" && (
+        {setting.type === "select" && Array.isArray(setting.options) && (
           <span className="tor-rc-setting-select">
             Default: <strong>{setting.default}</strong>
             <span className="tor-rc-setting-options"> [{setting.options.join(", ")}]</span>
@@ -102,9 +102,8 @@ function TipBubble({ type = "tip", children }) {
 }
 
 export default function RoleClient({ faction, role }) {
-  // Build icon path: /icons/FactionName/RoleName.png
-  const roleName = role.name.replace(/\s+/g, "");
-  const iconPath = role.icon ?? `/icons/${faction.name}/${roleName}.png`;
+  // Icons live in public/icons/RoleIcons, named after the mod's internal role id
+  const iconPath = role.icon ?? `/icons/RoleIcons/${role.id}.png`;
 
   return (
     <>
@@ -271,9 +270,12 @@ export default function RoleClient({ faction, role }) {
           border-radius: 12px;
           border: 1px solid rgba(255,255,255,0.06);
           display: flex;
-          align-items: center;
+          align-items: flex-start;
           gap: 10px;
           transition: border-color 0.2s, background 0.2s;
+        }
+        .tor-rc-ability-text {
+          line-height: 1.7;
         }
         .tor-rc-ability-item:hover {
           background: rgba(255,255,255,0.05);
@@ -284,6 +286,7 @@ export default function RoleClient({ faction, role }) {
           font-size: 0.5rem;
           color: var(--fc);
           flex-shrink: 0;
+          margin-top: 0.45em;
         }
 
         /* ── Settings ── */
@@ -473,7 +476,9 @@ export default function RoleClient({ faction, role }) {
             <section className="tor-rc-section">
               <h2 className="tor-rc-section-title">How It Works</h2>
               <ul className="tor-rc-ability-list">
-                <li className="tor-rc-ability-item">{parseMarkup(role.extra || role.description)}</li>
+                <li className="tor-rc-ability-item">
+                  <span className="tor-rc-ability-text">{parseMarkup(role.extra || role.description)}</span>
+                </li>
               </ul>
             </section>
           </FadeSection>

@@ -4,6 +4,7 @@ export const modifier = {
   color: "#66bb6a",
   roles: [
     {
+      id: "Admired",
       slug: "admired",
       name: "Admired",
       alignment: "Modifiers",
@@ -11,6 +12,7 @@ export const modifier = {
       extra: "(Betrayal Modifiers):\nAs an Admired player, you win with the Crewmates and not your original team.\n\nYou can see the Admirer.",
     },
     {
+      id: "Antidote",
       slug: "antidote",
       name: "Antidote",
       alignment: "Modifiers",
@@ -18,6 +20,7 @@ export const modifier = {
       extra: "As the Antidote, when someone tries to use their Kill button on you, their Cooldown will be decreased by a configurable amount of time.",
     },
     {
+      id: "Autopsy",
       slug: "autopsy",
       name: "Autopsy",
       alignment: "Modifiers",
@@ -25,6 +28,7 @@ export const modifier = {
       extra: "As the Autopsy, you can see how people died.\n\nCannot be assigned to Doctor, Tracefinder, Scientist, or Sunnyboy.",
     },
     {
+      id: "Avanger",
       slug: "avenger",
       name: "Avenger",
       alignment: "Modifiers",
@@ -32,6 +36,7 @@ export const modifier = {
       extra: "Host can set whether the Impostor can become an Avenger. When the Avenger is killed (voted out, and irregular kills will not count), the Avenger will revenge a random player.",
     },
     {
+      id: "Aware",
       slug: "aware",
       name: "Aware",
       alignment: "Modifiers",
@@ -39,6 +44,7 @@ export const modifier = {
       extra: "As the Aware, you get a notification in the next meeting if a revealing role had interacted with you.",
     },
     {
+      id: "Bait",
       slug: "bait",
       name: "Bait",
       alignment: "Modifiers",
@@ -46,6 +52,7 @@ export const modifier = {
       extra: "As the Bait, when you die, the murderer who killed the Bait will self-report the Bait's body. However, this won't happen when a Scavenger, Cleaner, Swooper, Wraith, Medusa, or Killing Machine kills the Bait. The report may have a delay according to the Host's settings.",
     },
     {
+      id: "Trapper",
       slug: "beartrap",
       name: "Beartrap",
       alignment: "Modifiers",
@@ -53,6 +60,7 @@ export const modifier = {
       extra: "As the Beartrap, when you die, Beartrap immobilizes killer for a configurable amount of time.",
     },
     {
+      id: "Bewilder",
       slug: "bewilder",
       name: "Bewilder",
       alignment: "Modifiers",
@@ -60,6 +68,7 @@ export const modifier = {
       extra: "As the Bewilder, you may have a smaller/bigger vision. When the Bewilder has died, the murderer's vision may become the same as the Bewilder's, depending on the settings.",
     },
     {
+      id: "Blessed",
       slug: "blessed",
       name: "Blessed",
       alignment: "Modifiers",
@@ -67,6 +76,7 @@ export const modifier = {
       extra: "The Blessed gets a shield at the start of every round except the first that lasts for a certain amount of time. The shield will not work if not enough players are alive",
     },
     {
+      id: "Bloodthirst",
       slug: "bloodthirst",
       name: "Bloodthirst",
       alignment: "Modifiers",
@@ -74,6 +84,7 @@ export const modifier = {
       extra: "As the Bloodthirst, doing tasks allows you to become bloodthirsty and kill players.\nWhen you finish a task, the next player you come in contact with dies.\n\nYour Bloodthirst remains after a meeting.\nUpon making a kill, your Bloodthirst clears till the next task you complete.\nBloodthirsts do not stack.\n\nOnly assigned to Crewmates with tasks.",
     },
     {
+      id: "Bounty",
       slug: "bounty",
       name: "Bounty",
       alignment: "Modifiers",
@@ -81,6 +92,7 @@ export const modifier = {
       extra: "The Bounty will receive a green $ symbol next to their name for everyone to see. When the Bounty is killed, it is likely the killer will receive a positive effect, but there is also a chance the killer receives a negative effect.",
     },
     {
+      id: "Burst",
       slug: "burst",
       name: "Burst",
       alignment: "Modifiers",
@@ -88,6 +100,7 @@ export const modifier = {
       extra: "As the Burst, your killer explodes if they aren't inside a Vent after a set amount of time.",
     },
     {
+      id: "Chronos",
       slug: "chronos",
       name: "Chronos",
       alignment: "Modifiers",
@@ -95,6 +108,7 @@ export const modifier = {
       extra: "As Chronos, your presence warps how meetings play out.\nIf you call the meeting, the discussion timer is halved for a rushed trial.\nIf someone else calls a meeting while you are alive, the discussion timer is extended instead, dragging out the deliberation.\nA subtle icon appears next to your name during meetings, hinting at your modifier without revealing its exact effect.",
     },
     {
+      id: "Circumvent",
       slug: "circumvent",
       name: "Circumvent",
       alignment: "Modifiers",
@@ -102,6 +116,7 @@ export const modifier = {
       extra: "As the Circumvent, you can't Vent.\n\nOnly assigned to Impostors.",
     },
     {
+      id: "Clumsy",
       slug: "clumsy",
       name: "Clumsy",
       alignment: "Modifiers",
@@ -109,6 +124,7 @@ export const modifier = {
       extra: "As the Clumsy, you have a chance to miss your kill.\n\nWhen you miss, your Cooldown is reset, and the target remains untouched.\n\nOnly assigned to killers.",
     },
     {
+      id: "Concealed",
       slug: "concealed",
       name: "Concealed",
       alignment: "Modifiers",
@@ -116,6 +132,7 @@ export const modifier = {
       extra: "When the Concealed is reported, the report is delayed by a certain amount of time.",
     },
     {
+      id: "Cyber",
       slug: "cyber",
       name: "Cyber",
       alignment: "Modifiers",
@@ -123,6 +140,7 @@ export const modifier = {
       extra: "As the Cyber, you cannot die while in a group.\nDepending on the settings, Impostors, Neutrals, and or Crewmates will know if you die.",
     },
     {
+      id: "Diseased",
       slug: "diseased",
       name: "Diseased",
       alignment: "Modifiers",
@@ -130,6 +148,7 @@ export const modifier = {
       extra: "As the Diseased, when someone tries to use their Kill button on you, their Cooldown will be increased by a configurable amount of time.",
     },
     {
+      id: "Unreportable",
       slug: "disregarded",
       name: "Disregarded",
       alignment: "Modifiers",
@@ -137,6 +156,7 @@ export const modifier = {
       extra: "With the Disregarded Modifier, your corpse will be unreportable.",
     },
     {
+      id: "Distracted",
       slug: "distracted",
       name: "Distracted",
       alignment: "Modifiers",
@@ -144,6 +164,7 @@ export const modifier = {
       extra: "When the Distracted is near someone, their speed will be reduced.",
     },
     {
+      id: "DoubleShot",
       slug: "double-shot",
       name: "Double Shot",
       alignment: "Modifiers",
@@ -151,6 +172,7 @@ export const modifier = {
       extra: "When a player with Double Shot guesses a role incorrectly, they will get a second chance to guess, but the next wrong guess will result in suicide.",
     },
     {
+      id: "Eavesdropper",
       slug: "eavesdropper",
       name: "Eavesdropper",
       alignment: "Modifiers",
@@ -158,6 +180,7 @@ export const modifier = {
       extra: "As the Eavesdropper, you have a chance to read other Role/Modifier information-based messages like Mortician or Sleuth.",
     },
     {
+      id: "Egoist",
       slug: "egoist",
       name: "Egoist",
       alignment: "Modifiers",
@@ -165,6 +188,7 @@ export const modifier = {
       extra: "As the Egoist, if your team wins, the Egoist wins instead of their team.\nMadmates and Neutrals won't be Egoist.",
     },
     {
+      id: "Enchanted",
       slug: "enchanted",
       name: "Enchanted",
       alignment: "Modifiers",
@@ -172,6 +196,7 @@ export const modifier = {
       extra: "(Betrayal Modifiers):\nThe Enchanted Modifier can only be obtained through being converted by the Ritualist or upon killing the OIIAI as a non-Nerconomicon holder.\nOnce Enchanted, you are apart of the Coven team and are no longer apart of your original team.",
     },
     {
+      id: "Evader",
       slug: "evader",
       name: "Evader",
       alignment: "Modifiers",
@@ -179,6 +204,7 @@ export const modifier = {
       extra: "As the Evader, When you get voted out, there is a chance they will not get ejected. (Chance set by the Host.)",
     },
     {
+      id: "EvilSpirit",
       slug: "evil-spirit",
       name: "Evil Spirit",
       alignment: "Modifiers",
@@ -186,6 +212,7 @@ export const modifier = {
       extra: "As an Evil Spirit, it's your job to help the Spiritcaller to victory. You can use your Haunt button to freeze players and reduce their vision. Alternatively, you can use your Haunt button to give the Spiritcaller a shield against a kill attempt temporarily.",
     },
     {
+      id: "Explosive",
       slug: "explosive",
       name: "Explosive",
       alignment: "Modifiers",
@@ -193,6 +220,7 @@ export const modifier = {
       extra: "When the Explosive dies, the killer will receive a bomb, that they can pass to others. After a certain amount of time the player with the bomb dies",
     },
     {
+      id: "ExtraLife",
       slug: "extra-life",
       name: "Extra Life",
       alignment: "Modifiers",
@@ -200,6 +228,7 @@ export const modifier = {
       extra: "As the Extra Life, you will not be killed for the first time you are killed.",
     },
     {
+      id: "Flash",
       slug: "flash",
       name: "Flash",
       alignment: "Modifiers",
@@ -207,6 +236,7 @@ export const modifier = {
       extra: "As the Flash, your default movement speed is faster than others. (speed depends on the setting of the Host)",
     },
     {
+      id: "Fool",
       slug: "fool",
       name: "Fool",
       alignment: "Modifiers",
@@ -214,6 +244,7 @@ export const modifier = {
       extra: "Sleuth and Mechanic won't be Fool. Fools can't repair any Sabotage.",
     },
     {
+      id: "Forgetful",
       slug: "forgetful",
       name: "Forgetful",
       alignment: "Modifiers",
@@ -221,6 +252,7 @@ export const modifier = {
       extra: "The Forgetful's tasks will reset after every meeting.",
     },
     {
+      id: "Fragile",
       slug: "fragile",
       name: "Fragile",
       alignment: "Modifiers",
@@ -228,6 +260,7 @@ export const modifier = {
       extra: "As the Fragile, you will instantly die if someone tries to use the Kill button on you (even if the role cannot directly kill).",
     },
     {
+      id: "FragileHunter",
       slug: "fragile-hunter",
       name: "Fragile Hunter",
       alignment: "Modifiers",
@@ -235,6 +268,7 @@ export const modifier = {
       extra: "As the Fragile Hunter, if you kill the Fragile, you automatically win the game.",
     },
     {
+      id: "Gambler",
       slug: "gambler",
       name: "Gambler",
       alignment: "Modifiers",
@@ -242,6 +276,7 @@ export const modifier = {
       extra: "As the Gambler, you have a 50/50 chance to either kill your killer or die. The role will be removed after you burn your ability uses.",
     },
     {
+      id: "Ghoul",
       slug: "ghoul",
       name: "Ghoul",
       alignment: "Modifiers",
@@ -249,6 +284,7 @@ export const modifier = {
       extra: "As the Ghoul, one of two outcomes can occur on task completion.\n\nIf alive: Suicide\nIf dead: You kill your killer if they're alive.\n\nThis is only assigned to Crewmates, and not Crewmates with no tasks or are task-based.",
     },
     {
+      id: "Glow",
       slug: "glow",
       name: "Glow",
       alignment: "Modifiers",
@@ -256,6 +292,7 @@ export const modifier = {
       extra: "As the Glow, during lights out, you and players nearby you will receive a vision boost.",
     },
     {
+      id: "Gravestone",
       slug: "gravestone",
       name: "Gravestone",
       alignment: "Modifiers",
@@ -263,6 +300,7 @@ export const modifier = {
       extra: "As the Gravestone, your role is revealed to everyone when you die.",
     },
     {
+      id: "Gross",
       slug: "gross",
       name: "Gross",
       alignment: "Modifiers",
@@ -270,6 +308,7 @@ export const modifier = {
       extra: "As the Gross, your body will reappear after every meeting in the same place, and not be reportable after the first meeting. This happens because you are so gross no one will want to clean you up.\n",
     },
     {
+      id: "Guesser",
       slug: "guesser",
       name: "Guesser",
       alignment: "Modifiers",
@@ -277,6 +316,7 @@ export const modifier = {
       extra: "As a Guesser, guess the roles of players in meetings to kill them.\nGuessing the incorrect role kills you instead.\nThe guessing command is: /bt [player ID] [role]\nYou can see the player's id before the player's name or use the /id command to view the id of all players.",
     },
     {
+      id: "Hurried",
       slug: "hurried",
       name: "Hurried",
       alignment: "Modifiers",
@@ -284,6 +324,7 @@ export const modifier = {
       extra: "As the hurried, you must complete all your tasks to win with your team! If you fail with your tasks, you lose.\nHurried hurries to his goal, so it won't get Madmate, Charmed or so.",
     },
     {
+      id: "Identifier",
       slug: "identifier",
       name: "Identifier",
       alignment: "Modifiers",
@@ -291,6 +332,7 @@ export const modifier = {
       extra: "As the Identifier, when reporting a body, you will get a message in meeting saying if the Killer has a lighter color\n(Pink, Yellow, White, Cyan, Lime, Rose, Banana, Gray, Coral) or darker color(Blue, Red, Green, Orange, Black, Purple, Brown, Maroon, Tan).",
     },
     {
+      id: "Influenced",
       slug: "influenced",
       name: "Influenced",
       alignment: "Modifiers",
@@ -298,6 +340,7 @@ export const modifier = {
       extra: "As the Influenced, your vote will be forced to the player with the most votes.\nInfluenced vote won't be counted while choosing the exiled player'\nNote that your vote skill still functions on the player you voted first\nIf all the alive players are Influenced, then the vote result won't shift\nCollector cannot become Influenced.",
     },
     {
+      id: "LabRat",
       slug: "lab-rat",
       name: "Lab Rat",
       alignment: "Modifiers",
@@ -305,6 +348,7 @@ export const modifier = {
       extra: "Every meeting, your role basis changes. Your basis could be:\n\nEngineer basis\nScientist basis\nTracker basis\nNoisemaker basis\nDetective basis",
     },
     {
+      id: "Lag",
       slug: "lag",
       name: "Lag",
       alignment: "Modifiers",
@@ -312,6 +356,7 @@ export const modifier = {
       extra: "The Lag's kills are delayed by 1 second.",
     },
     {
+      id: "LastImpostor",
       slug: "last-impostor",
       name: "Last Impostor",
       alignment: "Modifiers",
@@ -319,6 +364,7 @@ export const modifier = {
       extra: "This special effect is given to the last surviving Impostor. It significantly reduces their Kill Cooldown.",
     },
     {
+      id: "Lazy",
       slug: "lazy",
       name: "Lazy",
       alignment: "Modifiers",
@@ -326,6 +372,7 @@ export const modifier = {
       extra: "As the Lazy, you are assigned a single short task and are immune to Warlocks, Puppeteers, and Gangsters.",
     },
     {
+      id: "Lovers",
       slug: "lovers",
       name: "Lovers",
       alignment: "Modifiers",
@@ -333,6 +380,7 @@ export const modifier = {
       extra: "Lovers are a combination of two players. The Lovers win when they are the last ones standing, and their victory is shared. When one of the Lovers wins, the other also wins together. Lovers can see the 「♥」 next to each other's name. If one of the Lovers dies, the other will die in love (may not die in love according to the Host's settings). When one of the Lovers is exiled in the meeting, the other will die and become a dead body that cannot be reported.",
     },
     {
+      id: "Loyal",
       slug: "loyal",
       name: "Loyal",
       alignment: "Modifiers",
@@ -340,6 +388,7 @@ export const modifier = {
       extra: "As the Loyal, you cannot be recruited by roles such as Jackal or Cultist.\n\nCannot be assigned to Neutrals.",
     },
     {
+      id: "Lucky",
       slug: "lucky",
       name: "Lucky",
       alignment: "Modifiers",
@@ -347,6 +396,7 @@ export const modifier = {
       extra: "As the Lucky, there is a probability for you to evade the kill; the Host sets the specific probability. The killer will see a Shield Animation when the evasion takes effect, but you will not know anything.",
     },
     {
+      id: "Madmate",
       slug: "madmate",
       name: "Madmate",
       alignment: "Modifiers",
@@ -354,6 +404,7 @@ export const modifier = {
       extra: "Only Crewmates can become Madmate. Madmate's task is to help the Impostors win the game. Madmate will lose if all Impostors are killed/ejected. Madmates may know who are Impostors, and Impostors may know who are Madmates (Host settings).\n\nLazy Guy, Celebrity can't become Madmate. Sheriff, Snitch, Nice Guesser, Mayor, and Judge may become Madmate (Host settings). Skill changes when the following roles are converted into Madmates:\n\nTime Manager => Doing tasks will reduce meeting time.\nBodyguard => Skill won't activate if the killer is an Impostor.\nGrenadier => Flash bomb will work on Crewmates and Neutrals instead of the Impostors.\nSheriff => Can kill anyone, including Impostors (Host settings).\nNice Guesser => Can guess Crewmates and Neutrals\nPsychic => All evil Neutrals and Crewmates' names with the ability to kill will be displayed in Red.\nJudge => Can judge anyone\nPacifist => Their ability only works on Crewmates.",
     },
     {
+      id: "Mare",
       slug: "mare",
       name: "Mare",
       alignment: "Modifiers",
@@ -361,6 +412,7 @@ export const modifier = {
       extra: "As the Mare, you have a low Kill Cooldown and have higher speed but can only kill during lights.\n\nAdditionally, your name will appear in red during lights.\n\nOnly assigned to Impostors and cannot be guessed.",
     },
     {
+      id: "Mimic",
       slug: "mimic",
       name: "Mimic",
       alignment: "Modifiers",
@@ -368,6 +420,7 @@ export const modifier = {
       extra: "As the Mimic, when you're dead, other Impostors will receive a message once a meeting is called. This message will include information on roles which the Mimic killed.\nOnly Impostors can become Mimic.\nAs mimic you will always see roles of dead players",
     },
     {
+      id: "Mundane",
       slug: "mundane",
       name: "Mundane",
       alignment: "Modifiers",
@@ -375,6 +428,7 @@ export const modifier = {
       extra: "As the Mundane, you can only guess once you complete all your tasks.",
     },
     {
+      id: "Necroview",
       slug: "necroview",
       name: "Necroview",
       alignment: "Modifiers",
@@ -382,6 +436,7 @@ export const modifier = {
       extra: "As the Necroview, you can see the team of dead players. The following info will be displayed on the dead player's name while in a meeting:\n- The Red name indicates the Impostors.\n- The Cyan name indicates the Crewmates.\n- The Gray name indicates the Neutrals.\n- The Purple name indicates the Coven.",
     },
     {
+      id: "Nimble",
       slug: "nimble",
       name: "Nimble",
       alignment: "Modifiers",
@@ -389,6 +444,7 @@ export const modifier = {
       extra: "As the Nimble, you gain access to the Vent button.\n\nOnly assigned to certain Crewmates.",
     },
     {
+      id: "Oiiai",
       slug: "oiiai",
       name: "OIIAI",
       alignment: "Modifiers",
@@ -396,6 +452,7 @@ export const modifier = {
       extra: "As the OIIAI, when you die, you will make your killer forget their role.\nAdditionally, you may pass OIIAI on to the killer, depending on settings.",
     },
     {
+      id: "Oblivious",
       slug: "oblivious",
       name: "Oblivious",
       alignment: "Modifiers",
@@ -403,6 +460,7 @@ export const modifier = {
       extra: "Analyst and Cleaners won't be Oblivious. The Oblivious cannot report dead bodies. Note: Bait killed by Oblivious will still report automatically, and Oblivious can still be used as a scapegoat for Anonymous.",
     },
     {
+      id: "Onbound",
       slug: "onbound",
       name: "Onbound",
       alignment: "Modifiers",
@@ -410,6 +468,7 @@ export const modifier = {
       extra: "As the Onbound, you cannot be guessed in meetings.",
     },
     {
+      id: "Overclocked",
       slug: "overclocked",
       name: "Overclocked",
       alignment: "Modifiers",
@@ -417,6 +476,7 @@ export const modifier = {
       extra: "As the Overclocked, your Kill Cooldown is reduced by a percentage.\n\nThis feature is only assigned to roles with a Kill button.",
     },
     {
+      id: "Paranoia",
       slug: "paranoia",
       name: "Paranoia",
       alignment: "Modifiers",
@@ -424,6 +484,7 @@ export const modifier = {
       extra: "As the Paranoia, you will be considered as two players in the game to determine when the game ends due to killers having the majority. Additionally, this grants you an extra vote, depending on options.\nNot assigned to Neutrals nor Madmates.",
     },
     {
+      id: "Peacemaker",
       slug: "peacemaker",
       name: "Peacemaker",
       alignment: "Modifiers",
@@ -431,6 +492,7 @@ export const modifier = {
       extra: "The Peacemaker can prevent all Impostor votes while they are alive.",
     },
     {
+      id: "Productive",
       slug: "productive",
       name: "Productive",
       alignment: "Modifiers",
@@ -438,6 +500,7 @@ export const modifier = {
       extra: "The Productive will receive a flash bang any time anyone does a task.",
     },
     {
+      id: "Prohibited",
       slug: "prohibited",
       name: "Prohibited",
       alignment: "Modifiers",
@@ -445,6 +508,7 @@ export const modifier = {
       extra: "As the Prohibited, you have specific Vents that you can't use.\nHow many Vents are disabled depends on the Host's settings.",
     },
     {
+      id: "Quota",
       slug: "quota",
       name: "Quota",
       alignment: "Modifiers",
@@ -452,6 +516,7 @@ export const modifier = {
       extra: "The Quota must kill a certian amount of people to win with their team.",
     },
     {
+      id: "Radar",
       slug: "radar",
       name: "Radar",
       alignment: "Modifiers",
@@ -459,6 +524,7 @@ export const modifier = {
       extra: "As the Radar, you have arrows pointing towards the closest person at all times.",
     },
     {
+      id: "Radiator",
       slug: "radiator",
       name: "Radiator",
       alignment: "Modifiers",
@@ -466,6 +532,7 @@ export const modifier = {
       extra: "For each second a player is near the Radiator, they will gain a point. While a player is not near the Radiator, they will lose a point. If the player has enough points, they will die.",
     },
     {
+      id: "Rage",
       slug: "rage",
       name: "Rage",
       alignment: "Modifiers",
@@ -473,6 +540,7 @@ export const modifier = {
       extra: "As Rage, you are given extra tasks on top of your normal ones.\nOnce every task is complete - your original ones and the extra Rage tasks - you gain a kill button and can kill other players.\n\nOnly assigned to task-based Crewmates. Scientist-basis roles (Doctor, Tracefinder, etc.) can never be given Rage.",
     },
     {
+      id: "Rainbow",
       slug: "rainbow",
       name: "Rainbow",
       alignment: "Modifiers",
@@ -480,6 +548,7 @@ export const modifier = {
       extra: "As the Rainbow, you change your colors like crazy.",
     },
     {
+      id: "Randomizer",
       slug: "randomizer",
       name: "Randomizer",
       alignment: "Modifiers",
@@ -487,6 +556,7 @@ export const modifier = {
       extra: "As the Randomizer, when you die, your killer will do one of the following:\n  1. Self-report your body\n  2. Stand next to your body\n  3. Have their Kill Cooldown set to 600s\n  4. Randomly avenge a player.",
     },
     {
+      id: "Rascal",
       slug: "rascal",
       name: "Rascal",
       alignment: "Modifiers",
@@ -494,6 +564,7 @@ export const modifier = {
       extra: "As the Rascal, you can die to the Sheriff, and Snitch can find you if Snitch can find Madmates.\n\nOnly assigned to Crewmates, cannot be assigned by the Merchant.",
     },
     {
+      id: "Reach",
       slug: "reach",
       name: "Reach",
       alignment: "Modifiers",
@@ -501,6 +572,7 @@ export const modifier = {
       extra: "(Modifier)\nAs the Reach, unlike everyone else, you have the longest kill range possible in the game.\nOnly roles with a Kill button can get this Modifier.",
     },
     {
+      id: "Rebirth",
       slug: "rebirth",
       name: "Rebirth",
       alignment: "Modifiers",
@@ -508,6 +580,7 @@ export const modifier = {
       extra: "As the Rebirth, if you're the player about to be ejected, you will swap skins with a random Crewmate who voted for you.\nNotice: The Host vote never counts\nRebirth will be removed from you if you exhausted all your rebirths.",
     },
     {
+      id: "Rebound",
       slug: "rebound",
       name: "Rebound",
       alignment: "Modifiers",
@@ -515,6 +588,7 @@ export const modifier = {
       extra: "As the Rebound, if a Guesser successfully guessed you or a Judge successfully judged you, they will die instead.\nIf a player with Double Shot guesses you correctly, they will die instantly.",
     },
     {
+      id: "Recruit",
       slug: "recruit",
       name: "Recruit",
       alignment: "Modifiers",
@@ -522,6 +596,7 @@ export const modifier = {
       extra: "(Betrayal Modifiers):\nAs a Recruit, you are on the Jackal's team and help out the Jackal and their Sidekicks.\nYou cannot win with your original team.\nDepending on the settings, you may turn into Jackal if old Jackal was killed and no Sidekicks is alive.",
     },
     {
+      id: "Redo",
       slug: "redo",
       name: "Redo",
       alignment: "Modifiers",
@@ -529,6 +604,7 @@ export const modifier = {
       extra: "When the Redo votes themself, they will change roles to a random role in their faction. This action can only be used once.",
     },
     {
+      id: "Residue",
       slug: "residue",
       name: "Residue",
       alignment: "Modifiers",
@@ -536,6 +612,7 @@ export const modifier = {
       extra: "When a meeting is called, the last room you were in is revealed to everyone.",
     },
     {
+      id: "Rookie",
       slug: "rookie",
       name: "Rookie",
       alignment: "Modifiers",
@@ -543,6 +620,7 @@ export const modifier = {
       extra: "Sometimes the Rookie fails to complete their tasks. If this happens, their tasks are reset",
     },
     {
+      id: "Rusher",
       slug: "rusher",
       name: "Rusher",
       alignment: "Modifiers",
@@ -550,6 +628,7 @@ export const modifier = {
       extra: "Every time the Rusher finishes a task/kill they become faster.",
     },
     {
+      id: "Seer",
       slug: "seer",
       name: "Seer",
       alignment: "Modifiers",
@@ -557,6 +636,7 @@ export const modifier = {
       extra: "As the Seer, whenever a player dies, you will see a kill-flash (a red flash, possibly accompanied by an alarm sound like Sabotage).",
     },
     {
+      id: "Shaded",
       slug: "shaded",
       name: "Shaded",
       alignment: "Modifiers",
@@ -564,6 +644,7 @@ export const modifier = {
       extra: "You are recruited to the Shade's team, who is a dead player. They can choose to control your movement and actions at any time.",
     },
     {
+      id: "Silent",
       slug: "silent",
       name: "Silent",
       alignment: "Modifiers",
@@ -571,6 +652,7 @@ export const modifier = {
       extra: "As the Silent, your vote icon won't appear on the result screen.\nSo nobody knows who you voted for.",
     },
     {
+      id: "Sleuth",
       slug: "sleuth",
       name: "Sleuth",
       alignment: "Modifiers",
@@ -578,6 +660,7 @@ export const modifier = {
       extra: "As the Sleuth, you gain info from dead bodies.\n\nOptionally, you may also gain the killer's role.\n\nNot assigned to Analyst or Mortician.",
     },
     {
+      id: "Sloth",
       slug: "sloth",
       name: "Sloth",
       alignment: "Modifiers",
@@ -585,6 +668,7 @@ export const modifier = {
       extra: "As the Sloth, your default movement speed is slower than others.\n(Speed depends on the setting of the Host)",
     },
     {
+      id: "Snooze",
       slug: "snooze",
       name: "Snooze",
       alignment: "Modifiers",
@@ -592,6 +676,7 @@ export const modifier = {
       extra: "If you have the Snooze Add-On, there's a chance you can't report bodies. When you click report, you'll have a chance of not reporting the body. If you have failed at reporting, then you must wait to report again. There will be a cooldown on your report button, in which you will need to wait til the end of it to retry.",
     },
     {
+      id: "Soulless",
       slug: "soulless",
       name: "Soulless",
       alignment: "Modifiers",
@@ -599,6 +684,7 @@ export const modifier = {
       extra: "When a Cursed Soul steals your soul, you get this Modifier.\n\nYou are not counted as alive.",
     },
     {
+      id: "Spurt",
       slug: "spurt",
       name: "Spurt",
       alignment: "Modifiers",
@@ -606,6 +692,7 @@ export const modifier = {
       extra: "When you start walking, you gain an enormous speed boost, which swiftly deteriorates, until you have to rest still for a while to rejuvenate your speed.",
     },
     {
+      id: "Statue",
       slug: "statue",
       name: "Statue",
       alignment: "Modifiers",
@@ -613,6 +700,7 @@ export const modifier = {
       extra: "As the Statue, whenever many people are near the Statue, the Statue is completely frozen or slowed down depending on the settings.",
     },
     {
+      id: "Stealer",
       slug: "stealer",
       name: "Stealer",
       alignment: "Modifiers",
@@ -620,6 +708,7 @@ export const modifier = {
       extra: "As a Stealer, when you kill a player, the Stealer will get an additional vote (the Host sets the vote number, and the decimal is rounded down).\nAlso, extra votes from the Stealer are hidden during the meeting depending on the options.",
     },
     {
+      id: "Stubborn",
       slug: "stubborn",
       name: "Stubborn",
       alignment: "Modifiers",
@@ -627,6 +716,7 @@ export const modifier = {
       extra: "As the Stubborn, Eraser can't erase your role, Cleanser can't cleanse you, Bandit can't steal from you, and Monarch can't knight you.\nAdditionally, you can't gain any new Modifiers from the Merchant.",
     },
     {
+      id: "Subversion",
       slug: "subversion",
       name: "Subversion",
       alignment: "Modifiers",
@@ -634,6 +724,7 @@ export const modifier = {
       extra: "The Subversion can sabotage as a non-Impostor role.",
     },
     {
+      id: "Susceptible",
       slug: "susceptible",
       name: "Susceptible",
       alignment: "Modifiers",
@@ -641,6 +732,7 @@ export const modifier = {
       extra: "As the Susceptible, your death reason will be random.",
     },
     {
+      id: "Swift",
       slug: "swift",
       name: "Swift",
       alignment: "Modifiers",
@@ -648,6 +740,7 @@ export const modifier = {
       extra: "As the Swift, you will not make any movement when you kill.\nNote: Swift also ignores Bait",
     },
     {
+      id: "Tiebreaker",
       slug: "tiebreaker",
       name: "Tiebreaker",
       alignment: "Modifiers",
@@ -655,6 +748,7 @@ export const modifier = {
       extra: "As the Tiebreaker, a tie vote priority will be given to the target voted by the Tiebreaker. Note: If multiple Tiebreakers choose different tie targets simultaneously, the skills of the Tiebreaker will not take effect.",
     },
     {
+      id: "Tired",
       slug: "tired",
       name: "Tired",
       alignment: "Modifiers",
@@ -662,6 +756,7 @@ export const modifier = {
       extra: "As the Tired, Whenever you kill (or uses kill ability on) someone, alternatively whenever they finish a task, they will temporarily get lower vision and lower speed.",
     },
     {
+      id: "Torch",
       slug: "torch",
       name: "Torch",
       alignment: "Modifiers",
@@ -669,6 +764,7 @@ export const modifier = {
       extra: "As the Torch, you have maximum vision and is not affected by Lights Sabotage.",
     },
     {
+      id: "Toxic",
       slug: "toxic",
       name: "Toxic",
       alignment: "Modifiers",
@@ -676,6 +772,7 @@ export const modifier = {
       extra: "When a player is near the Toxic for a certain amount of time, they will be transported to the closest vent.",
     },
     {
+      id: "Tricky",
       slug: "tricky",
       name: "Tricky",
       alignment: "Modifiers",
@@ -683,6 +780,7 @@ export const modifier = {
       extra: "As the Tricky, your kills will have a random death reason.",
     },
     {
+      id: "Underclocked",
       slug: "underclocked",
       name: "Underclocked",
       alignment: "Modifiers",
@@ -690,6 +788,7 @@ export const modifier = {
       extra: "As the Underclocked, your Kill Cooldown is increased by a certain amount.\n\nThis Modifier is only assigned to roles with a Kill button.",
     },
     {
+      id: "Unlucky",
       slug: "unlucky",
       name: "Unlucky",
       alignment: "Modifiers",
@@ -697,6 +796,7 @@ export const modifier = {
       extra: "As the Unlucky, when you Complete Tasks, Kill, Venting, or open a Door, you have a chance to die.",
     },
     {
+      id: "Valhalla",
       slug: "valhalla",
       name: "Valhalla",
       alignment: "Modifiers",
@@ -704,6 +804,7 @@ export const modifier = {
       extra: "When the Ragnarok kills you, they will not have their cooldown reset.",
     },
     {
+      id: "VoidBallot",
       slug: "void-ballot",
       name: "Void Ballot",
       alignment: "Modifiers",
@@ -711,6 +812,7 @@ export const modifier = {
       extra: "Holder of this Modifier will have 0 vote count.",
     },
     {
+      id: "Watcher",
       slug: "watcher",
       name: "Watcher",
       alignment: "Modifiers",
@@ -718,6 +820,7 @@ export const modifier = {
       extra: "As a Watcher, during the meeting, you can see everyone's votes.",
     },
     {
+      id: "Web",
       slug: "web",
       name: "Web",
       alignment: "Modifiers",
@@ -725,6 +828,7 @@ export const modifier = {
       extra: "When the Web's body is reported, the body will fail to report, and the reporter will be frozen.",
     },
     {
+      id: "Windy",
       slug: "windy",
       name: "Windy",
       alignment: "Modifiers",
@@ -732,6 +836,7 @@ export const modifier = {
       extra: "Whenever a player is close to the Windy, the Windy will have a speed boost.",
     },
     {
+      id: "Workhorse",
       slug: "workhorse",
       name: "Workhorse",
       alignment: "Modifiers",
@@ -739,6 +844,7 @@ export const modifier = {
       extra: "As the Workhorse, you are the first player to complete all the tasks will become Workhorse, and Workhorse will give the player extra tasks. The Host sets the number of additional tasks.",
     },
     {
+      id: "Youtuber",
       slug: "youtuber",
       name: "YouTuber",
       alignment: "Modifiers",

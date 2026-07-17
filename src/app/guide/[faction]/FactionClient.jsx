@@ -279,11 +279,8 @@ export default function FactionClient({ faction }) {
           <FadeSection delay={80}>
             <div className="tor-fp-role-list">
               {faction.roles.map((role) => {
-                // Build icon path from faction name + role name
-                // e.g. /icons/Crewmate/Coroner.png
-                const factionFolder = faction.name; // "Crewmate", "Impostor" etc.
-                const roleName = role.name.replace(/\s+/g, ""); // remove spaces
-                const iconPath = `/icons/${factionFolder}/${roleName}.png`;
+                // Icons live in public/icons/RoleIcons, named after the mod's internal role id
+                const iconPath = `/icons/RoleIcons/${role.id}.png`;
 
                 return (
                   <Link
