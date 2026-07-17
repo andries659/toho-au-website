@@ -1,4 +1,4 @@
-"use client";
+/*"use client";
 
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -181,7 +181,7 @@ export default function FeaturesPage() {
           gap: 24px;
         }
 
-        /* Title */
+        
         .tor-page-title { text-align: center; margin-bottom: 16px; }
         .tor-page-eyebrow {
           display: inline-block;
@@ -204,7 +204,6 @@ export default function FeaturesPage() {
           -webkit-text-fill-color: transparent;
         }
 
-        /* Feature card */
         .tor-feat-card {
           display: grid;
           grid-template-columns: 1fr 1fr;
@@ -221,7 +220,6 @@ export default function FeaturesPage() {
         .tor-feat-card.reversed { direction: rtl; }
         .tor-feat-card.reversed > * { direction: ltr; }
 
-        /* Image side */
         .tor-feat-img-wrap {
           border-radius: 12px;
           overflow: hidden;
@@ -241,7 +239,6 @@ export default function FeaturesPage() {
         }
         .tor-feat-card:hover .tor-feat-img-wrap img { transform: scale(1.03); }
 
-        /* Text side */
         .tor-feat-text { display: flex; flex-direction: column; gap: 12px; }
         .tor-feat-tag {
           display: inline-flex;
@@ -275,7 +272,6 @@ export default function FeaturesPage() {
           line-height: 1.8;
         }
 
-        /* Responsive */
         @media (max-width: 680px) {
           .tor-feat-card,
           .tor-feat-card.reversed {
@@ -304,12 +300,10 @@ export default function FeaturesPage() {
               <FadeCard key={i} delay={i % 3 * 60}>
                 <div className={`tor-feat-card${i % 2 !== 0 ? " reversed" : ""}`}>
 
-                  {/* Image */}
                   <div className="tor-feat-img-wrap">
                     <img src={f.image} alt={f.title} />
                   </div>
 
-                  {/* Text */}
                   <div className="tor-feat-text">
                     <span className="tor-feat-num">/ {String(i + 1).padStart(2, "0")}</span>
                     <span
@@ -336,4 +330,4 @@ export default function FeaturesPage() {
       </div>
     </>
   );
-}
+}*/

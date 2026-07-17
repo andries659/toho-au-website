@@ -31,7 +31,7 @@ const GRADIENT_PRESETS = [
 ];
 
 // ── Named export slot keys ────────────────────────────────────
-const NAMED_KEYS = ["welcome", "rules", "welcomebubblecolor", "rulesbubblecolor", "gamemodebubblecolor"];
+const NAMED_KEYS = ["welcome", "rules", "onMeeting"];
 
 // ── Tab metadata ─────────────────────────────────────────────
 const tabsMeta = [
@@ -246,7 +246,7 @@ export default function TemplatePage() {
   const downloadTxt = () => {
     const blob = new Blob([markup], { type: "text/plain" });
     const a = document.createElement("a"); a.href = URL.createObjectURL(blob);
-    a.download = "torwl_template.txt"; a.click(); URL.revokeObjectURL(a.href);
+    a.download = "toho_template.txt"; a.click(); URL.revokeObjectURL(a.href);
   };
   const useCurrentForNamed = key => {
     setNamedMarkups(prev => ({ ...prev, [key]: markup }));
@@ -255,7 +255,7 @@ export default function TemplatePage() {
     const lines = NAMED_KEYS.map(k => `${k}:${namedMarkups[k]}`).join("\n");
     const blob = new Blob([lines], { type: "text/plain" });
     const a = document.createElement("a"); a.href = URL.createObjectURL(blob);
-    a.download = "torwl_named_exports.txt"; a.click(); URL.revokeObjectURL(a.href);
+    a.download = "toho_named_exports.txt"; a.click(); URL.revokeObjectURL(a.href);
   };
   const copyNamed = () => {
     navigator.clipboard.writeText(NAMED_KEYS.map(k => `${k}:${namedMarkups[k]}`).join("\n"));
@@ -711,7 +711,7 @@ export default function TemplatePage() {
 
           {/* Title */}
           <div className="tor-page-title">
-            <div className="tor-page-eyebrow">TOR-W : L</div>
+            <div className="tor-page-eyebrow">TOHO</div>
             <h1 className="tor-page-h1">Live Template Editor</h1>
           </div>
 
