@@ -12,10 +12,13 @@ function DownloadButton() {
 
   useEffect(() => {
     async function fetchLatest() {
-      const res = await fetch("https://api.github.com/repos/Limeau/TownofHost-Optimized/releases/latest/TOHO.dll");
-      const data = await res.json();
-      if (data.assets?.length > 0) {
-        setDownloadUrl(data.assets[0].browser_download_url);
+      try {
+        const res = await fetch("https://api.github.com/repos/Limeau/TownofHost-Optimized/releases/latest");
+        const data = await res.json();
+        const asset = data.assets?.find(a => a.name === "TOHO.dll");
+        setDownloadUrl(asset?.browser_download_url || null);
+      } catch (err) {
+        console.error("Failed to fetch latest release:", err);
       }
     }
     fetchLatest();

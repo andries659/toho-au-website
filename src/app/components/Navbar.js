@@ -45,8 +45,8 @@ export default function Navbar() {
   ];
 
   const externalLinks = [
-    { href: "https://github.com/andries659/TownofHost-Optimized", label: "GitHub", icon: FaGithub },
-    { href: "https://discord.gg/YOUR_INVITE", label: "Discord", icon: FaDiscord },
+    { href: "https://github.com/Limeau/TownofHost-Optimized", label: "GitHub", icon: FaGithub },
+    { href: "https://discord.gg/tohoptimized", label: "Discord", icon: FaDiscord },
   ];
 
   return (
