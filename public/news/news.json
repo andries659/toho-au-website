@@ -2,12 +2,13 @@
   {
     "id": 1,
     "title": "Migration To TOHO",
-    "date": "15 July 2026",
+    "date": "17 July 2026",
     "content": 
     ["Since the discontinuation of TOR-W: L, I have moved back to the modding in host-only mods.\n",
+	 "Please note, no mod releases will be posted here in news, due to the Changelogs block already existing and it also being on the official GitHub repository.",
 	 "Ever since moving back, I have talked to the mod's creator, Lime (limeau on Discord), that I can revamp this website for his mod.\n",
 	 "With that said, I am glad to be back in the host-only modding community, and I feel welcomed more than ever, and I hope that you all will enjoy the mod as much as I do spending time coding awesome roles and modifiers t play with."
 	],
-	"author": "The Head Of Development, Andries"
+	"author": "The Head Of Development, Andries & Lime"
   }
 ]
