@@ -289,6 +289,16 @@ export default function TemplatePage() {
           flex-direction: column;
           gap: 40px;
         }
+		
+		.tor-sub {
+          margin: 20px auto 0;
+          max-width: 500px;
+          font-size: 17px;
+          color: rgba(240,238,255,0.45);
+          line-height: 1.65;
+          font-weight: 400;
+          font-family: 'Space Mono', monospace;
+        }
 
         /* Page title */
         .tor-page-title { text-align: center; }
