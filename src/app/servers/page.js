@@ -266,7 +266,7 @@ export default function ServerInstallation() {
             <div className="tor-page-eyebrow">TOHO</div>
             <h1 className="tor-page-h1">Server Installation</h1>
             <p className="tor-page-sub">
-              TOR-W: L cannot be played on official Innersloth servers. Use one of the modded servers below to play.
+              TOHO cannot be played on official Innersloth servers. Use one of the modded servers below to play.
             </p>
           </div>
 
