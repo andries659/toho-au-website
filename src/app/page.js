@@ -349,6 +349,7 @@ export default function Home() {
         <Navbar />
 		<br />
 		<br />
+		<br />
 		<BirthdayBanner />
 
         <main className="tor-main">
