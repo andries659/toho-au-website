@@ -1,11 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import Navbar from "./components/Navbar";
+import Navbar from "../components/Navbar";
 import { FaPalette, FaVoteYea, FaPuzzlePiece, FaCog, FaGamepad, FaCheckCircle, FaDownload } from "react-icons/fa";
 import { useEffect, useState, useRef } from "react";
-import Footer from "./components/Footer";
-import ChangelogSection from "./components/ChangelogSection";
+import Footer from "../components/Footer";
+import ChangelogSection from "../components/ChangelogSection";
 
 function DownloadButton() {
   const [downloadUrl, setDownloadUrl] = useState(null);
