@@ -234,6 +234,8 @@ export default function Navbar() {
         .tor-mobile-menu a:hover { background: rgba(255,255,255,0.05); color: #f0eeff; }
         .tor-mobile-menu a.starlight { color: #ffe066; }
         .tor-mobile-menu a.starlight:hover { background: rgba(255,224,102,0.08); }
+		.tor-mobile-menu a.birthdays { color: #1085c4; }
+        .tor-mobile-menu a.birthdays:hover { background: rgba(56,151,201,0.08); }
 
         @media (max-width: 768px) {
           .tor-nav-links { display: none; }
