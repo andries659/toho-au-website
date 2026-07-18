@@ -11,4 +11,17 @@
 	],
 	"author": "The Head Of Development, Andries & Lime"
   }
+  {
+    "id": 2,
+    "title": "Website Update",
+    "date": "18 July 2026",
+    "content": 
+    ["Some new things have been added to website, ever since the release, and yes, in the same day it was released (for me, I know timezones exist).\n",
+	 "There has been two new ages added:\n- Feedback\n- Birsthdays\n",
+	 "The Feedback page is there to directly send bugs, suggestions or just feedback about the website. THIS DOES REQUIRE A DISCORD LOGIN TO NOT HAVE TROLL LOGS.\n",
+	 "The Birthdays page is limited, as it is just gonna be used for birthdays for members in the server, most likely just staff. This is to publicly wish people a happy birthday so that it encourages more members to send wishes and regard on the website. This also requires a Discord login, sadly.\n",
+	 "Like I said, it stops from people messing with the stuff and sending troll messages."
+	],
+	"author": "The Head Of Development, Andries"
+  }
 ]
