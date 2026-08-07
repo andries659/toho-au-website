@@ -402,24 +402,24 @@ export default function Home() {
             <section className="tor-panel">
               <div className="tor-section-label">
                 <div className="tor-section-icon tor-icon-green"><FaCheckCircle /></div>
-                <h2>Compatibility</h2>
+                <h2>{t.home.compatibility}</h2>
               </div>
               <div className="tor-compat-list">
                 <div className="tor-compat-item">
                   <div className="tor-dot tor-dot-green" />
-                  <span className="tor-compat-text">Supports version <strong>2026.6.8 (17.4.0)</strong> on PC</span>
+                  <span className="tor-compat-text" dangerouslySetInnerHTML={{ __html: t.home.compatibiltyDesc1 }}/>
                 </div>
                 <div className="tor-compat-item">
                   <div className="tor-dot tor-dot-green" />
-                  <span className="tor-compat-text">Supports the latest verion of <strong>Starlight</strong></span>
+                  <span className="tor-compat-text" dangerouslySetInnerHTML={{ __html: t.home.compatibiltyDesc2 }}/>
                 </div>
                 <div className="tor-compat-item">
                   <div className="tor-dot tor-dot-green" />
-                  <span className="tor-compat-text">Host-only — <strong>only host requires the mod</strong> — not all players requires the mod</span>
+                  <span className="tor-compat-text" dangerouslySetInnerHTML={{ __html: t.home.compatibiltyDesc3 }}/>
                 </div>
                 <div className="tor-compat-item">
                   <div className="tor-dot tor-dot-red" />
-                  <span className="tor-compat-text">Only works on <strong>Modded Regions (e.g. Niko-EU, Modded EU)</strong></span>
+                  <span className="tor-compat-text" dangerouslySetInnerHTML={{ __html: t.home.compatibiltyDesc4 }}/>
                 </div>
               </div>
             </section>
@@ -430,12 +430,12 @@ export default function Home() {
             <section className="tor-panel">
               <div className="tor-section-label">
                 <div className="tor-section-icon tor-icon-blue"><FaCog /></div>
-                <h2>Installation</h2>
+                <h2>{t.home.installation}</h2>
               </div>
               <div className="tor-steps">
                 {[
-                  { title: "BepInEx",   desc: "Install Unity.Il2Cpp win-x86 BepInEx build" },
-                  { title: "TOHO",  desc: "Drop the downloaded .dll into your BepInEx/plugins folder" },
+                  { title: t.home.installTitle1,   desc: t.home.installDesc1 },
+                  { title: t.home.installTitle2,  desc: t.home.installDesc2 },
                 ].map(({ title, desc }, i) => (
                   <div key={title} className="tor-step">
                     <div className="tor-step-num">{i + 1}</div>

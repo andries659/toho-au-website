@@ -31,8 +31,28 @@
     "gameOptions": "Options de Jeu",
     "gameOptionsDesc": "Nouveaux paramètres et outils de configuration",
     "gamemodes": "Modes de Jeu",
-    "gamemodesDesc": "Des façons entièrement nouvelles de jouer"
+    "gamemodesDesc": "Des façons entièrement nouvelles de jouer",
+    "compatibility": "Compatibilité",
+    "compatibiltyDesc1": "Compatible avec la version <strong>2026.6.8 (17.4.0)</strong> sur PC",
+    "compatibiltyDesc2": "Compatible avec la dernière version de <strong>Starlight</strong>",
+    "compatibiltyDesc3": "Hôte uniquement — <strong>seul l'hôte nécessite le mod</strong> — tous les joueurs ne nécessitent pas le mod",
+    "compatibiltyDesc4": "Fonctionne uniquement sur <strong>Régions Modifiées (ex. Niko-EU, Modded EU)</strong>",
+    "installation": "Installation",
+    "installTitle1": "BepInEx",
+    "installDesc1": "Installez la version win-x86 de BepInEx pour Unity.Il2Cpp",
+    "installTitle2": "TOHO",
+    "installDesc2": "Déposez le fichier .dll téléchargé dans votre dossier BepInEx/plugins",
+    "changelog": "Journal des Modifications",
+    "noChangelog": "Aucun journal des modifications disponible.",
+    "fetchChangelog": "Récupération du journal des modifications..."
   },
+  "templates": {},
+  "servers": {},
+  "features": {},
+  "feedback": {},
+  "guide": {},
+  "birthdays": {},
+  "starlight": {},
   "news": {
     "title": "Dernières Actualités"
   }

@@ -7,8 +7,10 @@ import remarkGfm from "remark-gfm";
 import rehypeHighlight from "rehype-highlight";
 import "github-markdown-css/github-markdown-dark.css";
 import "highlight.js/styles/github-dark.css";
+import { useLocale } from "./LocaleProvider";
 
 export default function ChangelogSection() {
+  const { t } = useLocale();
   const [changelog, setChangelog] = useState("");
   const [version, setVersion] = useState("");
   const [htmlUrl, setHtmlUrl] = useState("");
@@ -184,7 +186,7 @@ export default function ChangelogSection() {
             </div>
             {/* Title and badge stacked vertically — no inline wrapping on mobile */}
             <div className="tor-changelog-title-group">
-              <span className="tor-changelog-title">Changelog</span>
+              <span className="tor-changelog-title">{t.home.changelog}</span>
               {version && (
                 <span className="tor-version-badge">{version}</span>
               )}
@@ -193,7 +195,7 @@ export default function ChangelogSection() {
 
           <div className="tor-changelog-body">
             {loading ? (
-              <p className="tor-changelog-loading">Fetching changelog...</p>
+              <p className="tor-changelog-loading">{t.home.fetchChangelog}</p>
             ) : changelog ? (
               <>
                 <article
@@ -222,7 +224,7 @@ export default function ChangelogSection() {
                 )}
               </>
             ) : (
-              <p className="tor-changelog-empty">No changelog available.</p>
+              <p className="tor-changelog-empty">{t.home.noChangelog}</p>
             )}
           </div>
         </div>

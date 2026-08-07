@@ -71,6 +71,7 @@ export default function Navbar() {
     { href: `/${locale}/servers`, label: t.nav.servers },
     { href: `/${locale}/features`, label: t.nav.features },
     { href: `/${locale}/feedback`, label: t.nav.feedback },
+	{ href: `/${locale}/projects`, label: t.nav.projects },
   ];
 
   const guideLinks = [
@@ -107,6 +108,26 @@ export default function Navbar() {
           background: transparent;
           border-bottom: 1px solid transparent;
         }
+		
+		.tor-beta-tag {
+		  display: inline-flex;
+		  align-items: center;
+		  padding: 2px 5px;
+		  border-radius: 4px;
+		  background: rgba(255, 110, 180, 0.12);
+		  border: 1px solid rgba(255, 110, 180, 0.25);
+		  color: #ff6eb4;
+		  font-family: 'Space Mono', monospace;
+		  font-size: 8px;
+		  font-weight: 700;
+		  letter-spacing: 0.04em;
+		  line-height: 1;
+		}
+		.tor-mobile-dropdown-trigger > span {
+		  display: inline-flex;
+		  align-items: center;
+		  gap: 7px;
+		}
 
         .tor-nav-inner {
           width: 100%;
@@ -436,12 +457,13 @@ export default function Navbar() {
 
             <div className="tor-dropdown" ref={translationRef}>
               <button
-                className={`tor-dropdown-trigger${translationOpen ? " active" : ""}`}
-                onClick={() => setTranslationOpen((v) => !v)}
-              >
-                {t.nav.lang}
-                <FaChevronDown />
-              </button>
+				className={`tor-dropdown-trigger${translationOpen ? " active" : ""}`}
+				onClick={() => setTranslationOpen((v) => !v)}
+			   >
+				{t.nav.lang}
+				<span className="tor-beta-tag">BETA!</span>
+				<FaChevronDown />
+			  </button>
               <div className={`tor-dropdown-menu${translationOpen ? " open" : ""}`}>
                 {translationLinks.map(({ code, label }) => (
                   <button
@@ -461,6 +483,7 @@ export default function Navbar() {
               <Link key={href} href={href}>{label}</Link>
             ))}
             <Link href={`/${locale}/starlight`} className="starlight">{t.nav.starlight}</Link>
+			<Link href="/birthdays" className="birthdays">✦ Birtdays</Link>
             <button className="tor-nav-btn tor-news-btn" onClick={() => setOpenNews(true)}>
               <FaNewspaper />
               {t.nav.news}
@@ -513,12 +536,15 @@ export default function Navbar() {
             </div>
 
             <button
-              className={`tor-mobile-dropdown-trigger${mobileTranslationOpen ? " active" : ""}`}
-              onClick={() => setMobileTranslationOpen((v) => !v)}
-            >
-              {t.nav.lang}
-              <FaChevronDown />
-            </button>
+			  className={`tor-mobile-dropdown-trigger${mobileTranslationOpen ? " active" : ""}`}
+			  onClick={() => setMobileTranslationOpen((v) => !v)}
+			>
+			  <span>
+				{t.nav.lang}
+				<span className="tor-beta-tag">BETA!</span>
+			  </span>
+			  <FaChevronDown />
+			</button>
             <div className={`tor-mobile-dropdown-panel${mobileTranslationOpen ? " open" : ""}`}>
               {translationLinks.map(({ code, label }) => (
                 <button
@@ -540,6 +566,7 @@ export default function Navbar() {
             <Link href={`/${locale}/starlight`} className="starlight" onClick={() => setOpen(false)}>
               {t.nav.starlight}
             </Link>
+			<Link href="/birthdays" className="birthdays" onClick={() => setOpen(false)}>✦ Birthdays</Link>
           </div>
         </div>
       </nav>

@@ -1,11 +1,16 @@
-// Edit this whenever you reuse the birthday page for someone new.
-// `slug` is the storage key — changing it starts a fresh wish list
-// without deleting the previous person's wishes (they stay archived in KV).
 export const birthdayConfig = {
-  active: false, // flip to false to hide the banner + redirect the page away
-  slug: "andries-2026-08", // unique per person + occasion, e.g. "andries-2026-12"
+  active: true,
+  slug: "andries-2026-08",
+
+  discordId: "1207676769998610445",
+
   name: "Andries",
-  avatarUrl: "https://cdn.discordapp.com/avatars/1187637542812655616/e7cbe534343422d35a5cba8ab4e8e4ea.png?size=1024", // drop an image in /public/birthday/
+  username: "andries",
+
+  avatarUrl: "https://cdn.discordapp.com/avatars/1207676769998610445/e6de51801b8cf54e2871d35ad9f9a109.png?size=1024",
+
+  bannerUrl: "https://cdn.discordapp.com/banners/1207676769998610445/5f1b8534e3fde6ea61515f047c0895bb.png?size=1024",
+
   date: "August 10th",
   intro: "Drop a birthday message below — it'll show up on the wall for everyone to see 🎉",
 };

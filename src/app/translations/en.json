@@ -6,6 +6,7 @@
     "servers": "Servers",
     "features": "Features",
     "feedback": "Feedback",
+	"projects": "Projects",
     "guide": "Guide",
     "news": "News",
     "starlight": "✦ Starlight",
@@ -31,8 +32,28 @@
     "gameOptions": "Game Options",
     "gameOptionsDesc": "New settings and configuration tools",
     "gamemodes": "Gamemodes",
-    "gamemodesDesc": "Entirely new ways to play"
+    "gamemodesDesc": "Entirely new ways to play",
+    "compatibility": "Compatibility",
+    "compatibiltyDesc1": "Supports version <strong>2026.6.8 (17.4.0)</strong> on PC",
+    "compatibiltyDesc2": "Supports the latest verion of <strong>Starlight</strong>",
+    "compatibiltyDesc3": "Host-only — <strong>only host requires the mod</strong> — not all players requires the mod",
+    "compatibiltyDesc4": "Only works on <strong>Modded Regions (e.g. Niko-EU, Modded EU)",
+    "installation": "Installation",
+    "installTitle1": "BepInEx",
+    "installDesc1": "Install Unity.Il2Cpp win-x86 BepInEx build",
+    "installTitle2": "TOHO",
+    "installDesc2": "Drop the downloaded .dll into your BepInEx/plugins folder",
+    "changelog": "Changelog",
+    "noChangelog": "No changelog available.",
+    "fetchChangelog": "Fetching changelog..."
   },
+  "templates": {},
+  "servers": {},
+  "features": {},
+  "feedback": {},
+  "guide": {},
+  "birthdays": {},
+  "starlight": {},
   "news": {
     "title": "Latest News"
   }

@@ -23,5 +23,18 @@
 	 "Like I said, it stops from people messing with the stuff and sending troll messages."
 	],
 	"author": "The Head Of Development, Andries"
+  },
+  {
+    "id": 3,
+    "title": "Website Update & Something More 👀",
+    "date": "7 August 2026",
+    "content": 
+    ["So, with today's release of the website, I added something new, but actually 2 new things.\n",
+	 "They are:\n- A Projects tab\n- A BETA! tag next to the Lang dropdown\n",
+	 "The Projects tab is to showcase any UNRELATED mods that can be used with TOHO, or that are just silly mods.\n",
+	 "The BETA! tag for Lang is there to show that it's a work in progress. Yes, it does take time, sometimes time I don't always have, sadly.\n",
+	 "And with that, it's a wrap, but also not, but if you don't know why, be sure to look in by the 10th of August 👀."
+	],
+	"author": "The Head Of Development, Andries"
   }
 ]

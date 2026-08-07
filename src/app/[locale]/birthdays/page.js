@@ -277,53 +277,166 @@ export default function BirthdayPage() {
           gap: 12px;
         }
         .tor-wish-card {
-          display: flex;
-          gap: 12px;
-          background: rgba(255,255,255,0.03);
-          border: 1px solid rgba(255,255,255,0.07);
-          border-radius: 14px;
-          padding: 16px;
-        }
-        .tor-wish-avatar {
-          width: 36px;
-          height: 36px;
-          border-radius: 50%;
-          flex-shrink: 0;
-          border: 1px solid rgba(255,255,255,0.12);
-        }
-        .tor-wish-name {
-          font-family: 'Space Mono', monospace;
-          font-size: 12px;
-          font-weight: 700;
-          color: #d8b4fe;
-          margin-bottom: 4px;
-        }
-        .tor-wish-message {
-          font-family: 'Space Mono', monospace;
-          font-size: 13px;
-          color: rgba(240,238,255,0.8);
-          line-height: 1.6;
-          white-space: pre-wrap;
-          word-break: break-word;
-        }
-        .tor-bday-empty {
-          font-family: 'Space Mono', monospace;
-          font-size: 12px;
-          color: rgba(240,238,255,0.35);
-          text-align: center;
-          padding: 24px;
-        }
-        .tor-bday-inactive {
-          font-family: 'Space Mono', monospace;
-          font-size: 13px;
-          color: rgba(240,238,255,0.5);
-          text-align: center;
-          padding: 120px 24px;
-        }
+		  position: relative;
+		  overflow: hidden;
+		  background: #11131d;
+		  border: 1px solid rgba(255,255,255,0.08);
+		  border-radius: 16px;
+		  transition: transform 0.2s, border-color 0.2s;
+		}
+
+		.tor-wish-card:hover {
+		  transform: translateY(-2px);
+		  border-color: rgba(160,123,255,0.25);
+		}
+
+		/* Discord-style banner */
+		.tor-wish-banner {
+		  width: 100%;
+		  height: 110px;
+		  background:
+			linear-gradient(
+			  135deg,
+			  rgba(160,123,255,0.65),
+			  rgba(255,110,180,0.5)
+			);
+		  background-size: cover;
+		  background-position: center;
+		}
+
+		/* Content underneath banner */
+		.tor-wish-content {
+		  position: relative;
+		  padding: 0 18px 18px;
+		}
+
+		/* PFP overlaps the banner */
+		.tor-wish-avatar {
+		  width: 64px;
+		  height: 64px;
+		  border-radius: 50%;
+		  object-fit: cover;
+		  border: 5px solid #11131d;
+		  display: block;
+		  margin-top: -32px;
+		  position: relative;
+		}
+
+		/* Username */
+		.tor-wish-name {
+		  font-family: 'Space Mono', monospace;
+		  font-size: 14px;
+		  font-weight: 700;
+		  color: #f0eeff;
+		  margin-top: 10px;
+		  margin-bottom: 10px;
+		}
+
+		/* Message */
+		.tor-wish-message {
+		  font-family: 'Space Mono', monospace;
+		  font-size: 13px;
+		  color: rgba(240,238,255,0.78);
+		  line-height: 1.6;
+		  white-space: pre-wrap;
+		  word-break: break-word;
+		}
+		
+		.tor-bday-profile {
+		  width: 100%;
+		  background: #11131d;
+		  border: 1px solid rgba(255,255,255,0.08);
+		  border-radius: 18px;
+		  overflow: hidden;
+		  margin-bottom: 32px;
+		  text-align: left;
+		}
+
+		.tor-bday-banner {
+		  width: 100%;
+		  height: 180px;
+		  background-size: cover;
+		  background-position: center;
+		  background-color: #5865f2;
+		}
+
+		.tor-bday-profile-body {
+		  position: relative;
+		  padding: 0 24px 24px;
+		}
+
+		.tor-bday-avatar {
+		  width: 96px;
+		  height: 96px;
+		  object-fit: cover;
+		  border-radius: 50%;
+		  border: 6px solid #11131d;
+		  margin-top: -48px;
+		  position: relative;
+		  display: block;
+		}
+
+		.tor-bday-profile-info {
+		  margin-top: 10px;
+		}
+
+		.tor-bday-name {
+		  font-size: 26px;
+		  font-weight: 800;
+		  color: #f0eeff;
+		  margin: 0;
+		}
+
+		.tor-bday-username {
+		  font-family: 'Space Mono', monospace;
+		  font-size: 12px;
+		  color: rgba(240,238,255,0.45);
+		  margin-top: 2px;
+		}
+
+		.tor-bday-date {
+		  display: inline-flex;
+		  align-items: center;
+		  gap: 7px;
+		  margin-top: 16px;
+
+		  font-family: 'Space Mono', monospace;
+		  font-size: 11px;
+		  letter-spacing: 0.05em;
+		  color: #d8b4fe;
+		}
+
+		.tor-bday-intro {
+		  font-family: 'Space Mono', monospace;
+		  font-size: 13px;
+		  line-height: 1.7;
+		  color: rgba(240,238,255,0.6);
+		  margin: 12px 0 0;
+		}
 
         @media (max-width: 680px) {
           .tor-bday-main { padding: 88px 14px 48px; }
         }
+		
+		@media (max-width: 680px) {
+		  .tor-bday-banner {
+			height: 140px;
+		  }
+
+		  .tor-bday-profile-body {
+			padding: 0 18px 20px;
+		  }
+
+		  .tor-bday-avatar {
+			width: 80px;
+			height: 80px;
+			margin-top: -40px;
+		  }
+
+		  .tor-bday-name {
+			font-size: 23px;
+		  }
+		}
       `}</style>
 
       <div className="tor-bday-page">
@@ -331,14 +444,43 @@ export default function BirthdayPage() {
         <Navbar />
 
         <main className="tor-bday-main">
-          <div className="tor-bday-hero">
-            <img src={birthdayConfig.avatarUrl} alt={birthdayConfig.name} className="tor-bday-avatar" />
-            <div className="tor-bday-eyebrow">
-              <FaBirthdayCake /> {birthdayConfig.date}
-            </div>
-            <h1 className="tor-bday-h1">Happy Birthday, {birthdayConfig.name}!</h1>
-            <p className="tor-bday-intro">{birthdayConfig.intro}</p>
-          </div>
+          <div className="tor-bday-profile">
+			  <div
+				className="tor-bday-banner"
+				style={{
+				  backgroundImage: `url(${birthdayConfig.bannerUrl})`,
+				}}
+			  />
+
+			  <div className="tor-bday-profile-body">
+				<img
+				  src={birthdayConfig.avatarUrl}
+				  alt={birthdayConfig.name}
+				  className="tor-bday-avatar"
+				/>
+
+				<div className="tor-bday-profile-info">
+				  <h1 className="tor-bday-name">
+					{birthdayConfig.name}
+				  </h1>
+
+				  {birthdayConfig.username && (
+					<div className="tor-bday-username">
+					  @{birthdayConfig.username}
+					</div>
+				  )}
+
+				  <div className="tor-bday-date">
+					<FaBirthdayCake />
+					{birthdayConfig.date}
+				  </div>
+
+				  <p className="tor-bday-intro">
+					{birthdayConfig.intro}
+				  </p>
+				</div>
+			  </div>
+			</div>
 
           {status === "unauthenticated" && (
             <div className="tor-bday-auth-card">
@@ -396,14 +538,30 @@ export default function BirthdayPage() {
               <p className="tor-bday-empty">No wishes yet — be the first!</p>
             )}
             {wishes.map(w => (
-              <div key={w.discordId} className="tor-wish-card">
-                {w.avatar && <img src={w.avatar} alt="" className="tor-wish-avatar" />}
-                <div>
-                  <div className="tor-wish-name">{w.name}</div>
-                  <div className="tor-wish-message">{w.message}</div>
-                </div>
-              </div>
-            ))}
+			  <div key={w.discordId} className="tor-wish-card">
+				<div
+				  className="tor-wish-banner"
+				  style={
+					w.banner
+					  ? { backgroundImage: `url(${w.banner})` }
+					  : undefined
+				  }
+				/>
+
+				<div className="tor-wish-content">
+				  {w.avatar && (
+					<img
+					  src={w.avatar}
+					  alt=""
+					  className="tor-wish-avatar"
+					/>
+				  )}
+
+				  <div className="tor-wish-name">{w.name}</div>
+				  <div className="tor-wish-message">{w.message}</div>
+				</div>
+			  </div>
+			))}
           </div>
         </main>
 
