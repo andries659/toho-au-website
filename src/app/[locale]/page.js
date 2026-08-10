@@ -350,7 +350,10 @@ export default function Home() {
         <div className="tor-nebula tor-nb2" />
         <div className="tor-nebula tor-nb3" />
 
-        <BirthdayBanner />
+        <br />
+		<br />
+		<br />
+		<BirthdayBanner />
 		<Navbar />
 
         <main className="tor-main">
