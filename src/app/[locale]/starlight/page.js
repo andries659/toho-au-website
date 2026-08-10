@@ -4,7 +4,7 @@ import Footer from "../../components/Footer";
 import { FaRocket, FaMobileAlt, FaDownload, FaInfoCircle, FaStar } from "react-icons/fa";
 
 export const metadata = {
-  title: "TOR-W: L | Starlight",
+  title: "TOHO | Starlight",
   description: "Quickly install and launch your Among Us mods on mobile."
 };
 
