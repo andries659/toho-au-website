@@ -1,5 +1,5 @@
 export const birthdayConfig = {
-  active: true,
+  active: false,
   slug: "andries-2026-08",
 
   discordId: "1207676769998610445",

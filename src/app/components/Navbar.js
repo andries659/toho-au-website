@@ -483,7 +483,6 @@ export default function Navbar() {
               <Link key={href} href={href}>{label}</Link>
             ))}
             <Link href={`/${locale}/starlight`} className="starlight">{t.nav.starlight}</Link>
-			<Link href="/birthdays" className="birthdays">✦ Birtdays</Link>
             <button className="tor-nav-btn tor-news-btn" onClick={() => setOpenNews(true)}>
               <FaNewspaper />
               {t.nav.news}
@@ -566,7 +565,6 @@ export default function Navbar() {
             <Link href={`/${locale}/starlight`} className="starlight" onClick={() => setOpen(false)}>
               {t.nav.starlight}
             </Link>
-			<Link href="/birthdays" className="birthdays" onClick={() => setOpen(false)}>✦ Birthdays</Link>
           </div>
         </div>
       </nav>

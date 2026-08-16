@@ -6,7 +6,6 @@ import { FaPalette, FaVoteYea, FaPuzzlePiece, FaCog, FaGamepad, FaCheckCircle, F
 import { useEffect, useState, useRef } from "react";
 import Footer from "../components/Footer";
 import ChangelogSection from "../components/ChangelogSection";
-import BirthdayBanner from "../components/BirthdayBanner";
 import { useLocale } from "../components/LocaleProvider";
 
 function DownloadButton() {
@@ -350,10 +349,6 @@ export default function Home() {
         <div className="tor-nebula tor-nb2" />
         <div className="tor-nebula tor-nb3" />
 
-        <br />
-		<br />
-		<br />
-		<BirthdayBanner />
 		<Navbar />
 
         <main className="tor-main">
