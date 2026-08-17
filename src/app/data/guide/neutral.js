@@ -1609,5 +1609,37 @@ export const neutral = {
         { type: "toggle", label: "Has <color=#ff1919>Impostor</color> Vision", default: true },
       ],
     },
-  ],
+      {
+      id: "Clock",
+      slug: "clock",
+      name: "Clock",
+      alignment: "Neutrals",
+      description: "Speed up the time!",
+      extra: "The Clock can unshift after killing someone to reduce everyone's kill cooldown by a certain amount of seconds. The players' speed will be increased for the same amount of time. At the end of this, one random player (it might be you!) will die of Old Age. Survive until the end to win.",
+      settings: [
+        { type: "number", label: "Kill Cooldown", default: "20", min: "1", max: "60", suffix: "s" },
+        { type: "number", label: "Ability Cooldown", default: "20", min: "1", max: "60", suffix: "s" },
+        { type: "number", label: "Speed Up Duration", default: "10", min: "1", max: "30", suffix: "s" },
+      ],
+    },
+    {
+      id: "RebelLeader",
+      slug: "rebel-leader",
+      name: "Rebel Leader",
+      alignment: "Neutrals",
+      description: "Win with your Rebels",
+      extra: "The Rebel Leader spawns with two people having the Rebel add-on. You cannot kill, and cannot be killed while the Rebels are alive. If one of the Rebels die, the other one will also die. Survive until the end to win with your Rebels.",
+    },
+    {
+      id: "Wildcard",
+      slug: "wildcard",
+      name: "Wildcard",
+      alignment: "Neutrals",
+      description: "Become a random Betrayal team!",
+      extra: "The Wildcard can use the kill button to give a player a random Betrayal addon (e.g Charmed, Contagious, Egoist, etc.). The Betrayal addon is randomly selected at the beginning of the game.",
+      settings: [
+        { type: "number", label: "Kill Cooldown", default: "20", min: "0", max: "180", suffix: "s" },
+      ],
+    },
+],
 };

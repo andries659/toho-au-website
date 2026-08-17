@@ -1447,5 +1447,52 @@ export const impostor = {
         { type: "number", label: "After a certain time, decrease the speed of <color=#ff1919>Zombie</color> by", default: "0.1", min: "0.0", max: "1.0", suffix: "x" },
       ],
     },
-  ],
+      {
+      id: "Incinerator",
+      slug: "incinerator",
+      name: "Incinerator",
+      alignment: "Impostors",
+      description: "Burn your targets to ash",
+      extra: "When the Incinerator kills a player, the target will lose their outfit, and be given the name 'ASHES'.",
+      settings: [
+        { type: "number", label: "Kill Cooldown", default: "20", min: "0", max: "180", suffix: "s" },
+      ],
+    },
+    {
+      id: "Lifestealer",
+      slug: "lifestealer",
+      name: "Lifestealer",
+      alignment: "Impostors",
+      description: "Steal lives from dead players!",
+      extra: "When the Lifestealer reports a body, the Lifestealer will take the skin of the dead body, and vice versa. Use the Unshift button to switch between Steal and Report modes. For each time they steal a body, they will get a Shield preventing them from being killed.",
+      settings: [
+        { type: "number", label: "Kill Cooldown", default: "20", min: "0", max: "180", suffix: "s" },
+      ],
+    },
+    {
+      id: "Samurai",
+      slug: "samurai",
+      name: "Samurai",
+      alignment: "Impostors",
+      description: "Kill players by blinding them first",
+      extra: "The Samurai can unshift to temporarily blind everyone around them, including themself. They have no kill cooldown, but can only kill players that are currently blinded by them.",
+      settings: [
+        { type: "number", label: "Blind Radius", default: "3", min: "1", max: "5", suffix: "x" },
+        { type: "number", label: "Ability Cooldown", default: "20", min: "1", max: "60", suffix: "s" },
+        { type: "number", label: "Ability Duration", default: "10", min: "1", max: "30", suffix: "s" },
+      ],
+    },
+    {
+      id: "Silencer",
+      slug: "silencer",
+      name: "Silencer",
+      alignment: "Impostors",
+      description: "Silence all potential meetings!",
+      extra: "When the Silencer kills a player, all reports will be temporarily paused. No one can report a body and no one can call a meeting for a short time.",
+      settings: [
+        { type: "number", label: "Kill Cooldown", default: "20", min: "0", max: "180", suffix: "s" },
+        { type: "number", label: "Silencer Report Delay", default: "5", min: "1", max: "15", suffix: "s" },
+      ],
+    },
+],
 };

@@ -851,5 +851,32 @@ export const modifier = {
       description: "Get killed first to win",
       extra: "As the YouTuber, When you are the first player to die in the game, the YouTuber will win alone. If the YouTuber does not meet the win conditions, the YouTuber will follow the Crewmate to win. Note: Indirect killing methods such as being exiled, being guessed by the Guesser, etc., will not trigger the skills of the YouTuber.\nOnly Crewmates will become YouTuber.",
     },
-  ],
+      {
+      id: "Rebel",
+      slug: "rebel",
+      name: "Rebel",
+      alignment: "Modifiers",
+      description: "Your life is linked to the other Rebel",
+      extra: "You have been recruited by the Rebel Leader from the start of the game. If the other Rebel dies, you will also die. Win by staying alive until the end of the game with the other Rebel and Rebel Leader.",
+    },
+    {
+      id: "SurpriseAttack",
+      slug: "surprise-attack",
+      name: "Surprise Attack",
+      alignment: "Modifiers",
+      description: "Surprise players by transporting them",
+      extra: "With the Surprise Attack Modifier, each kill you make or each task you do, a random player will be transported with another random player.",
+    },
+    {
+      id: "Temporal",
+      slug: "temporal",
+      name: "Temporal",
+      alignment: "Modifiers",
+      description: "Increase the emergency meeting button cooldown",
+      extra: "As the Temporal, after you kill, you increase the emergency meeting button cooldown.",
+      settings: [
+        { type: "number", label: "Temporal Increase Time", default: "5", min: "1", max: "10", suffix: "s" },
+      ],
+    },
+],
 };

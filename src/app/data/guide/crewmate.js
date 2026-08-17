@@ -1468,5 +1468,38 @@ export const crewmate = {
         { type: "number", label: "Maximum Time after killing where killer appears red", default: "10", min: "1", max: "30", suffix: "s" },
       ],
     },
-  ],
+      {
+      id: "Hamsa",
+      slug: "hamsa",
+      name: "Hamsa",
+      alignment: "Crewmates",
+      description: "Redirect ability uses to the good",
+      extra: "The Hamsa can use their shield button to give an extra Ability use to Crewmates and remove them from Impostors.",
+      settings: [
+        { type: "number", label: "Protect Cooldown", default: "25", min: "0", max: "120", suffix: "s" },
+      ],
+    },
+    {
+      id: "Paranormal",
+      slug: "paranormal",
+      name: "Paranormal",
+      alignment: "Crewmates",
+      description: "Come back to life with your protect button",
+      extra: "As the Paranormal, you spawn as a normal Crewmate. When someone kills you, you spawn with a Protect button that can kill any player and revive you into a normal Crewmate directly.",
+      settings: [
+        { type: "number", label: "Ghost Kill Cooldown", default: "15", min: "5", max: "25", suffix: "s" },
+      ],
+    },
+    {
+      id: "Scribe",
+      slug: "scribe",
+      name: "Scribe",
+      alignment: "Crewmates",
+      description: "Chat while in game!",
+      extra: "The Scribe can use the chat UI at all times, making them able to chat at any point within the game.",
+      settings: [
+        { type: "toggle", label: "Scribe Can Be Guessed", default: false },
+      ],
+    },
+],
 };
