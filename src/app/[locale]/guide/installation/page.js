@@ -329,7 +329,7 @@ export default function InstallationGuidePage() {
               <div className="tor-install-compat-list">
                 <div className="tor-install-compat-item">
                   <div className="tor-install-dot tor-install-dot-green" />
-                  <span className="tor-install-compat-text">Supports version <strong>2026.6.8 (17.4.0)</strong> on PC</span>
+                  <span className="tor-install-compat-text">Supports version <strong>2026.8.18 (18.0.0)</strong> on PC</span>
                 </div>
                 <div className="tor-install-compat-item">
                   <div className="tor-install-dot tor-install-dot-green" />

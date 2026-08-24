@@ -3,7 +3,7 @@
 import { useMemo, useState } from "react";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
-import { FaInfoCircle, FaSearch, FaTimes } from "react-icons/fa";
+import { FaInfoCircle, FaSearch, FaTimes, FaCode, FaLightbulb } from "react-icons/fa";
 import { parseMarkup } from "@/app/[locale]/lib/textMarkup";
 import rolesData from "@/app/data/roles.json";
 
@@ -61,6 +61,23 @@ function RoleCard({ role }) {
         <FaInfoCircle style={{ color: "#4eb8ff", flexShrink: 0, marginTop: 2 }} />
         <span>{parseMarkup(role.description)}</span>
       </div>
+
+      {(role.coder || role.creator) && (
+        <div className="tor-role-credits">
+          {role.coder && (
+            <span className="tor-credit-item">
+              <FaCode style={{ flexShrink: 0 }} />
+              Coded by {role.coder}
+            </span>
+          )}
+          {role.creator && (
+            <span className="tor-credit-item">
+              <FaLightbulb style={{ flexShrink: 0 }} />
+              Idea by {role.creator}
+            </span>
+          )}
+        </div>
+      )}
 
       {role.extra && (
         <>
@@ -298,6 +315,22 @@ export default function Roles() {
           border-radius: 10px;
           border: 1px solid rgba(255,255,255,0.06);
         }
+
+        .tor-role-credits {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 6px 14px;
+          font-family: 'Space Mono', monospace;
+          font-size: 11px;
+          color: rgba(240,238,255,0.45);
+          padding: 0 2px;
+        }
+        .tor-credit-item {
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
+        }
+        .tor-credit-item svg { color: #a07bff; font-size: 10px; }
 
         .tor-expand-btn {
           display: flex;

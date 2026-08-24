@@ -18,6 +18,10 @@ export default function ServerInstallation() {
     { name: "NikoCat Asia", region: "AS", href: "window.location.href='amongus://init?servername=Niko233(AS)&serverport=443&serverip=https%3A%2F%2Fau-as.niko233.top&usedtls=false'" },
   ];
 
+  const jarneServers = [
+    { name: "Jarne's MEU", region: "EU", href: "window.location.href='amongus://init?servername=Jarne%27s_MEU&serverport=443&serverip=https%3A%2F%2Fmodmanagere.eu.amongusclub.cn&usedtls=false'" },
+  ];
+
   const regionColors = {
     EU:   { color: "#7dd3fc", bg: "rgba(14,165,233,0.12)",  border: "rgba(14,165,233,0.3)"  },
     NA:   { color: "#86efac", bg: "rgba(34,197,94,0.12)",   border: "rgba(34,197,94,0.3)"   },
@@ -361,6 +365,39 @@ export default function ServerInstallation() {
               </div>
               <div className="tor-srv-grid">
                 {nikoServers.map(server => {
+                  const s = regionColors[server.region];
+                  return (
+                    <a
+                      key={server.name}
+                      href={server.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="tor-srv-btn"
+                      style={{ color: s.color, borderColor: s.border, background: s.bg }}
+                    >
+                      <FaExternalLinkAlt style={{ fontSize: 10, opacity: 0.7 }} />
+                      {server.name}
+                      <span
+                        className="tor-srv-region"
+                        style={{ color: s.color, borderColor: s.border, background: `rgba(0,0,0,0.2)` }}
+                      >
+                        {server.region}
+                      </span>
+                    </a>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* Jarne's Modded Region */}
+            <div className="tor-srv-group">
+              <div className="tor-srv-divider">
+                <div className="tor-srv-divider-line" />
+                <span className="tor-srv-divider-label">Jarne's Modded Region</span>
+                <div className="tor-srv-divider-line" />
+              </div>
+              <div className="tor-srv-grid">
+                {jarneServers.map(server => {
                   const s = regionColors[server.region];
                   return (
                     <a
