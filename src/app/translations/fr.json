@@ -55,5 +55,15 @@
   "starlight": {},
   "news": {
     "title": "Dernières Actualités"
+  },
+  "about": {
+    "eyebrow": "À Propos",
+    "titleLine1": "Les personnes derrière",
+    "titleLine2": "TOHO",
+    "subtitle": "Une petite équipe qui construit une expérience Among Us plus grande et meilleure.",
+    "missionTitle": "Notre Mission",
+    "missionBody": "TOHO existe pour repousser les limites d'Among Us — de nouveaux rôles, de nouveaux modes de jeu et de nouvelles façons de jouer, conçus pour mobile et bureau. Nous nous concentrons sur des mods soignés, équilibrés et agréables à héberger et à jouer.",
+    "teamTitle": "Équipe",
+    "teamSubtitle": "Les personnes qui construisent et maintiennent TOHO."
   }
 }
