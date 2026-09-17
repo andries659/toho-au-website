@@ -56,5 +56,15 @@
   "starlight": {},
   "news": {
     "title": "Latest News"
+  },
+  "about": {
+    "eyebrow": "About Us",
+    "titleLine1": "The people behind",
+    "titleLine2": "TOHO",
+    "subtitle": "A small team building a bigger, better Among Us experience.",
+    "missionTitle": "Our Mission",
+    "missionBody": "TOHO exists to push Among Us further — new roles, new gamemodes, and new ways to play, built for both mobile and desktop. We're focused on making mods that feel polished, balanced, and fun to host and play.",
+    "teamTitle": "Team",
+    "teamSubtitle": "The people who build and maintain TOHO."
   }
 }
