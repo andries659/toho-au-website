@@ -42,7 +42,7 @@ const TEAM = [
   },
   {
     name: "Andries",
-    role: "Website Developer",
+    role: "Website Developer & Head Of Development",
     github: "https://github.com/andries659",
   },
 ];
