@@ -14,10 +14,16 @@ export default function Navbar() {
   const [hasUnread, setHasUnread] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [guideOpen, setGuideOpen] = useState(false);
+  const [playOpen, setPlayOpen] = useState(false);
+  const [communityOpen, setCommunityOpen] = useState(false);
   const [translationOpen, setTranslationOpen] = useState(false);
   const [mobileGuideOpen, setMobileGuideOpen] = useState(false);
+  const [mobilePlayOpen, setMobilePlayOpen] = useState(false);
+  const [mobileCommunityOpen, setMobileCommunityOpen] = useState(false);
   const [mobileTranslationOpen, setMobileTranslationOpen] = useState(false);
   const guideRef = useRef(null);
+  const playRef = useRef(null);
+  const communityRef = useRef(null);
   const translationRef = useRef(null);
 
   useEffect(() => {
@@ -30,6 +36,12 @@ export default function Navbar() {
     const onClickOutside = (e) => {
       if (guideRef.current && !guideRef.current.contains(e.target)) {
         setGuideOpen(false);
+      }
+      if (playRef.current && !playRef.current.contains(e.target)) {
+        setPlayOpen(false);
+      }
+      if (communityRef.current && !communityRef.current.contains(e.target)) {
+        setCommunityOpen(false);
       }
     };
     document.addEventListener("mousedown", onClickOutside);
@@ -67,16 +79,23 @@ export default function Navbar() {
   const navLinks = [
     { href: `/${locale}`, label: t.nav.home },
     { href: `/${locale}/roles`, label: t.nav.roles },
-    { href: `/${locale}/templates`, label: t.nav.templates },
-    { href: `/${locale}/servers`, label: t.nav.servers },
     { href: `/${locale}/features`, label: t.nav.features },
-    { href: `/${locale}/feedback`, label: t.nav.feedback },
-	{ href: `/${locale}/projects`, label: t.nav.projects },
   ];
 
   const guideLinks = [
     { href: `/${locale}/guide`, label: t.nav.roleGuide },
     { href: `/${locale}/guide/installation`, label: t.nav.installationGuide },
+  ];
+
+  const playLinks = [
+    { href: `/${locale}/templates`, label: t.nav.templates },
+    { href: `/${locale}/servers`, label: t.nav.servers },
+  ];
+
+  const communityLinks = [
+    { href: `/${locale}/projects`, label: t.nav.projects },
+    { href: `/${locale}/feedback`, label: t.nav.feedback },
+    { href: `/${locale}/about`, label: t.nav.about },
   ];
 
   const translationLinks = [
@@ -434,7 +453,7 @@ export default function Navbar() {
 
           {/* Desktop */}
           <div className="tor-nav-links">
-            {navLinks.slice(0, 4).map(({ href, label }) => (
+            {navLinks.map(({ href, label }) => (
               <Link key={href} href={href}>{label}</Link>
             ))}
 
@@ -449,6 +468,40 @@ export default function Navbar() {
               <div className={`tor-dropdown-menu${guideOpen ? " open" : ""}`}>
                 {guideLinks.map(({ href, label }) => (
                   <Link key={href} href={href} onClick={() => setGuideOpen(false)}>
+                    {label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            <div className="tor-dropdown" ref={playRef}>
+              <button
+                className={`tor-dropdown-trigger${playOpen ? " active" : ""}`}
+                onClick={() => setPlayOpen((v) => !v)}
+              >
+                {t.nav.play}
+                <FaChevronDown />
+              </button>
+              <div className={`tor-dropdown-menu${playOpen ? " open" : ""}`}>
+                {playLinks.map(({ href, label }) => (
+                  <Link key={href} href={href} onClick={() => setPlayOpen(false)}>
+                    {label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            <div className="tor-dropdown" ref={communityRef}>
+              <button
+                className={`tor-dropdown-trigger${communityOpen ? " active" : ""}`}
+                onClick={() => setCommunityOpen((v) => !v)}
+              >
+                {t.nav.community}
+                <FaChevronDown />
+              </button>
+              <div className={`tor-dropdown-menu${communityOpen ? " open" : ""}`}>
+                {communityLinks.map(({ href, label }) => (
+                  <Link key={href} href={href} onClick={() => setCommunityOpen(false)}>
                     {label}
                   </Link>
                 ))}
@@ -479,9 +532,6 @@ export default function Navbar() {
               </div>
             </div>
 
-            {navLinks.slice(4).map(({ href, label }) => (
-              <Link key={href} href={href}>{label}</Link>
-            ))}
             <Link href={`/${locale}/starlight`} className="starlight">{t.nav.starlight}</Link>
             <button className="tor-nav-btn tor-news-btn" onClick={() => setOpenNews(true)}>
               <FaNewspaper />
@@ -508,7 +558,7 @@ export default function Navbar() {
         {/* Mobile menu */}
         <div className={`tor-mobile-menu${open ? " open" : ""}`}>
           <div className="tor-mobile-menu-inner">
-            {navLinks.slice(0, 4).map(({ href, label }) => (
+            {navLinks.map(({ href, label }) => (
               <Link key={href} href={href} onClick={() => setOpen(false)}>{label}</Link>
             ))}
 
@@ -527,6 +577,50 @@ export default function Navbar() {
                   onClick={() => {
                     setOpen(false);
                     setMobileGuideOpen(false);
+                  }}
+                >
+                  {label}
+                </Link>
+              ))}
+            </div>
+
+            <button
+              className={`tor-mobile-dropdown-trigger${mobilePlayOpen ? " active" : ""}`}
+              onClick={() => setMobilePlayOpen((v) => !v)}
+            >
+              {t.nav.play}
+              <FaChevronDown />
+            </button>
+            <div className={`tor-mobile-dropdown-panel${mobilePlayOpen ? " open" : ""}`}>
+              {playLinks.map(({ href, label }) => (
+                <Link
+                  key={href}
+                  href={href}
+                  onClick={() => {
+                    setOpen(false);
+                    setMobilePlayOpen(false);
+                  }}
+                >
+                  {label}
+                </Link>
+              ))}
+            </div>
+
+            <button
+              className={`tor-mobile-dropdown-trigger${mobileCommunityOpen ? " active" : ""}`}
+              onClick={() => setMobileCommunityOpen((v) => !v)}
+            >
+              {t.nav.community}
+              <FaChevronDown />
+            </button>
+            <div className={`tor-mobile-dropdown-panel${mobileCommunityOpen ? " open" : ""}`}>
+              {communityLinks.map(({ href, label }) => (
+                <Link
+                  key={href}
+                  href={href}
+                  onClick={() => {
+                    setOpen(false);
+                    setMobileCommunityOpen(false);
                   }}
                 >
                   {label}
@@ -559,9 +653,6 @@ export default function Navbar() {
               ))}
             </div>
 
-            {navLinks.slice(4).map(({ href, label }) => (
-              <Link key={href} href={href} onClick={() => setOpen(false)}>{label}</Link>
-            ))}
             <Link href={`/${locale}/starlight`} className="starlight" onClick={() => setOpen(false)}>
               {t.nav.starlight}
             </Link>
